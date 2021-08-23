@@ -26,15 +26,15 @@ Never use all of CPUs for the analysis you are running - your system needs some 
 
 # Analysis
 
-1. QC
+## 1. QC
 
 [FASTQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)
 
 ```bash
 nth=6
-nname="SRR6078292"
-fastq_r1="raw_reads/${name}_1.fastq.gz"
-fastq_r2="raw_reads/${name}_2.fastq.gz"
+name=SRR6078292
+fastq_r1=raw_reads/${name}_1.fastq.gz
+fastq_r2=raw_reads/${name}_2.fastq.gz
 mkdir logs
 fastqc -t ${nth} ${fastq_r1} ${fastq_r2} |& tee -a logs/fastqc.log
 ```
@@ -71,7 +71,7 @@ trimmomatic PE \
 	trimmed_reads/${name}_2.tp.fastq.gz \
 	trimmed_reads/${name}_2.tu.fastq.gz \
 	SLIDINGWINDOW:4:20 \
-	ILLUMINACLIP:trimmed_reads/adapters_NexteraPE-PE.fasta:2:30:10 |& tee -a ${log}
+	ILLUMINACLIP:trimmed_reads/adapters_NexteraPE-PE.fasta:2:30:10 |& tee -a logs/trimmomatic.log
 	
 # re-check with fastqc
 fastqc -t ${nth} trimmed_reads/${name}_1.tp.fastq.gz trimmed_reads/${name}_2.tp.fastq.gz |& tee -a ${log}
@@ -79,24 +79,43 @@ fastqc -t ${nth} trimmed_reads/${name}_1.tp.fastq.gz trimmed_reads/${name}_2.tp.
 
 Trimmomatic can take up 15-20 minutes for a pair of files.
 
-2. Mapping
+## 2. Mapping
 
-Get reference genome and annotation from [NCBI](https://www.ncbi.nlm.nih.gov/assembly/GCF_000001405.39).
+Get reference genome and annotation from [NCBI](https://www.ncbi.nlm.nih.gov/genome/guide/human/). You can download the files prepared for use in pipelines and analyses, those include some of the pregenerated genome indices.
+
+```
+wget ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/001/405/GCA_000001405.15_GRCh38/seqs_for_alignment_pipelines.ucsc_ids/*no_alt_analysis_set.fna.gz -O reference/GRCh38.fna.gz
+wget ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/001/405/GCA_000001405.15_GRCh38/seqs_for_alignment_pipelines.ucsc_ids/*no_alt_analysis_set.fna.fai -O reference/GRCh38.fna.fai
+wget ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/001/405/GCA_000001405.15_GRCh38/seqs_for_alignment_pipelines.ucsc_ids/*no_alt_analysis_set.fna.hisat2_index.tar.gz -O reference/GRCh38.fna.hisat2_index.tar.gz
+wget ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/001/405/GCA_000001405.15_GRCh38/seqs_for_alignment_pipelines.ucsc_ids/*gff* -O reference/GRCh38.refseq_annotation.gff.gz
+wget ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/001/405/GCA_000001405.15_GRCh38/seqs_for_alignment_pipelines.ucsc_ids/*gtf* -O reference/GRCh38.refseq_annotation.gtf.gz
+
+```
 
 [STAR](https://github.com/alexdobin/STAR)
 
+For this youn need at least 8Gb of RAM (check how many megabytes of memory you have with `free -mega`)
 ```
-mkdir -p reference/hg38_index
-
 # genome index
-STAR --runThreadN 6 \
+mkdir -p reference/STAR_index
+STAR --runThreadN 3 \
 	--runMode genomeGenerate \
-	--genomeDir reference/hg38_index \
-	--genomeFastaFiles reference/Homo_sapiens.GRCh38.dna.fa \
-	--sjdbGTFfile reference/Homo_sapiens.GRCh38.92.gtf \
-	--sjdbOverhang 99
+	--genomeDir reference/STAR_index \
+	--genomeFastaFiles reference/GRCh38.fna \
+	--sjdbGTFfile reference/GRCh38.refseq_annotation.gtf \
+	--sjdbOverhang 99 \
+	--limitGenomeGenerateRAM 8369733898 \
+	|& tee -a logs/genomeindex.STAR.log
 
 # mapping
+mkdir -p mapping/STAR
+STAR --genomeDir reference/STAR_index \
+	--runThreadN ${nth} \
+	--readFilesIn ${fastq_r1} ${fastq_r2} \
+	--outFileNamePrefix mapping/STAR/${name} \
+	--outSAMtype BAM SortedByCoordinate \
+	--outSAMunmapped Within \
+	--outSAMattributes Standard |& tee -a logs/mapping.STAR.log
 
 ```
 

@@ -94,7 +94,6 @@ wget ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/001/405/GCA_000001405.15_GRC
 
 [STAR](https://github.com/alexdobin/STAR)
 
-For this youn need at least 8Gb of RAM (check how many megabytes of memory you have with `free -mega`)
 ```
 # genome index
 mkdir -p reference/STAR_index
@@ -103,9 +102,8 @@ STAR --runThreadN 3 \
 	--genomeDir reference/STAR_index \
 	--genomeFastaFiles reference/GRCh38.fna \
 	--sjdbGTFfile reference/GRCh38.refseq_annotation.gtf \
-	--sjdbOverhang 99 \
-	--limitGenomeGenerateRAM 8369733898 \
-	|& tee -a logs/genomeindex.STAR.log
+	--sjdbOverhang 99 \\
+	|& tee -a logs/genomeindex.HISAT2.log
 
 # mapping
 mkdir -p mapping/STAR
@@ -119,7 +117,31 @@ STAR --genomeDir reference/STAR_index \
 
 ```
 
+For human genome you need you need approximately 30Gb of RAM (check how many megabytes of memory you have with `free -mega`)
+Tweaking of memory usage parameters may also be required: `--limitGenomeGenerateRAM` determines total RAM available for index building and `--genomeChrBinNbits` to reduce RAM consumption per scaffold (to accomodate processing large number of scaffolds).  
+
 [HISAT2](http://daehwankimlab.github.io/hisat2/)
+
+HISAT2 needs 8Gb RAM for mapping to human genome, making it potentially usable on a personal laptop. With 8Gb and 6 cores, it takes about an hour to build index, mapping about half an hour.  
+
+```bash
+mkdir -p mapping/HISAT2
+
+hisat2-build reference/GRCh38.fa reference/GRCh38.fa |& tee -a logs/mapping.HISAT2.log
+
+hisat2 -x reference/GRCh38.fa \
+	-1 ${fastq_r1} \
+	-2 ${fastq_r2} \
+	-S mapping/HISAT2/${name}.sam \
+	--phred33 \
+	--rna-strandness RF \
+	-t -p $nth |& tee -a logs/mapping.HISAT.log
+
+samtools view -S -b mapping/HISAT2/${name}.sam > mapping/HISAT2/${name}.bam
+```
+
+It is possible to run HISAT2 on SRA samples "directly", by passing comma-separated list of accession numbers as `--sra-acc` argument.
+
 [Subread](http://subread.sourceforge.net/)
 
 

@@ -92,7 +92,7 @@ wget ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/001/405/GCA_000001405.15_GRC
 
 ```
 
-[STAR](https://github.com/alexdobin/STAR)
+### [STAR](https://github.com/alexdobin/STAR)
 
 ```
 # genome index
@@ -120,14 +120,14 @@ STAR --genomeDir reference/STAR_index \
 For human genome you need you need approximately 30Gb of RAM (check how many megabytes of memory you have with `free -mega`)
 Tweaking of memory usage parameters may also be required: `--limitGenomeGenerateRAM` determines total RAM available for index building and `--genomeChrBinNbits` to reduce RAM consumption per scaffold (to accomodate processing large number of scaffolds).  
 
-[HISAT2](http://daehwankimlab.github.io/hisat2/)
+### [HISAT2](http://daehwankimlab.github.io/hisat2/)
 
-HISAT2 needs 8Gb RAM for mapping to human genome, making it potentially usable on a personal laptop. With 8Gb and 6 cores, it takes about an hour to build index, mapping about half an hour.  
+HISAT2 needs 8Gb RAM for mapping to human genome, making it potentially usable on a personal laptop. With 8Gb and 6 cores, it takes about an hour to build index, mapping about 30-40 min.  
 
 ```bash
 mkdir -p mapping/HISAT2
 
-hisat2-build reference/GRCh38.fa reference/GRCh38.fa |& tee -a logs/mapping.HISAT2.log
+hisat2-build reference/GRCh38.fa reference/GRCh38.fa |& tee -a logs/genomeindex.HISAT2.log
 
 hisat2 -x reference/GRCh38.fa \
 	-1 ${fastq_r1} \
@@ -137,13 +137,52 @@ hisat2 -x reference/GRCh38.fa \
 	--rna-strandness RF \
 	-t -p $nth |& tee -a logs/mapping.HISAT.log
 
-samtools view -S -b mapping/HISAT2/${name}.sam > mapping/HISAT2/${name}.bam
+samtools view -S -b -@ ${nth} mapping/HISAT2/${name}.sam > mapping/HISAT2/${name}.bam |& tee -a logs/mapping.HISAT.log
 ```
 
 It is possible to run HISAT2 on SRA samples "directly", by passing comma-separated list of accession numbers as `--sra-acc` argument.
 
-[Subread](http://subread.sourceforge.net/)
+### [Subread](http://subread.sourceforge.net/)
 
+Building full index needs 15Gb of memory for human/mouse genome, and with this index, alignment requires 17.8Gb of memory for read mapping. On personal computer, it is recommended to build gapped index instead, which needs 5.7GB of memory for human/mouse (and takes 15 minutes, as compared with 40 for building full index), and 8.2GB of memory for mapping.  
+Memory use for index building and read mapping can be further reduced by building a split index using the `-B` and `-M` options.
+
+```bash
+mkdir mapping/Subread
+
+subread-buildindex -o GRCh38.fa.Subread_index -M 8000 reference/GRCh38.fa |& tee -a logs/genomeindex.Subread.log
+
+subread-align -t 0 \
+    -T ${nth} \
+    -i reference/GRCh38.fa.Subread_index \
+    -r ${fastq_r1} \
+    -R ${fastq_r2} \
+    -o mapping/Subread/${name}.bam |& tee -a logs/Subread.log
+
+```
+
+### [Rsubread](https://bioconductor.org/packages/release/bioc/html/Rsubread.html)
+
+R implementaton of `Subread`
+```r
+library(Rsubread)
+dir.create("mapping/Rsubread")
+ref <- "reference/GRCh38.fa"	
+name <- "SRR6078292"
+fastq_r1 <- sprintf("raw_reads/%s_1.fastq.gz",name)
+fastq_r2 <- sprintf("raw_reads/%s_2.fastq.gz",name)
+
+buildindex(basename="GRCh38.fa.Rsubread_index",reference=ref)
+
+align.stat <- align(
+  index="GRCh38.fa.Rsubread_index", 
+  readfile1=fastq_r1, 
+  readfile2=fastq_r2,
+  output_file=sprintf("mapping/Rsubread/%s.bam",name),
+  phredOffset=64
+)
+
+```
 
 # Other resources
 

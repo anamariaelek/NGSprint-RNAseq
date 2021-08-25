@@ -1,6 +1,6 @@
 # Requirements
 
-Create conda enviroment with all dependencies (you can choose toinstall only some of these).
+Create conda enviroment with all dependencies (you can choose to install only some of these).
 
 ```bash
 conda create -n rna
@@ -164,9 +164,11 @@ subread-align -t 0 \
 ### [Rsubread](https://bioconductor.org/packages/release/bioc/html/Rsubread.html)
 
 R implementaton of `Subread`
+
 ```r
 library(Rsubread)
 dir.create("mapping/Rsubread")
+
 ref <- "reference/GRCh38.fa"	
 name <- "SRR6078292"
 fastq_r1 <- sprintf("raw_reads/%s_1.fastq.gz",name)
@@ -181,6 +183,30 @@ align.stat <- align(
   output_file=sprintf("mapping/Rsubread/%s.bam",name),
   phredOffset=64
 )
+
+```
+
+## 3. Read counting 
+
+`featureCounts`
+
+```bash
+bam=mapping/Subread/${name}.bam
+
+featureCounts -a reference/GRCh38.refseq_annotation.gff \
+    -o <output_file> \
+    -T ${nth} \
+    $bam |& tee -a logs/featureCounts.log
+```
+
+If using `Rsubread`, then `Rsubread::featureCounts()` can be run from R. You can use externally downloaded annotation, but for mm9, mm10, hg19 and hg38 genomes there is an in-built NCBI RefSeq gene annotation available, too.
+
+```r
+require(Rsubread)
+
+name <- "SRR6078292"
+bam_files <- list.files("mapping/Rsubread", pattern="*bam", full.names=TRUE)
+fcounts <- featureCounts(bam_files, annot.inbuilt = "hg38", isPairedEnd=TRUE)
 
 ```
 

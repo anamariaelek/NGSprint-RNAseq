@@ -31,7 +31,7 @@ Never use all of CPUs for the analysis you are running - your system needs some 
 
 # Analysis
 
-Download raw data. **This will take a lot of time!** Approx. ~1h per sample. You should download at least 3 control and 3 treatment samples.
+Download raw data. **This will take a lot of time!** Approx. 30 min per sample. You should download at least 3 control and 3 treatment samples.
 
 ```
 nth=6
@@ -178,7 +178,7 @@ subread-align -t 0 \
 R implementaton of `Subread`
 
 ```r
-library(Rsubread)
+require(Rsubread)
 dir.create("mapping/Rsubread")
 
 ref <- "reference/GRCh38.fa"	
@@ -200,7 +200,11 @@ align.stat <- align(
 
 ## 3. Read counting 
 
+Downsteream examples assume the upstream analysis (from fastq to aligned bams) has been done for the samples from SRR6078288 to SRR6078293.
+ 
 [featureCounts](http://manpages.org/featurecounts)
+
+You can run it from command line.
 
 ```bash
 bam=mapping/Subread/${name}.bam
@@ -211,15 +215,50 @@ featureCounts -a reference/GRCh38.refseq_annotation.gff \
     $bam |& tee -a logs/featureCounts.log
 ```
 
-If using `Rsubread`, then `Rsubread::featureCounts()` can be run from R. You can use externally downloaded annotation, but for mm9, mm10, hg19 and hg38 genomes there is an in-built NCBI RefSeq gene annotation available, too.
+`Rsubread::featureCounts()` can also be run from R (recommended, because all the downstream work will be done in R). 
+You can use externally downloaded annotation, but for mm9, mm10, hg19 and hg38 genomes there is an in-built NCBI RefSeq gene annotation available, too.
 
 ```r
 require(Rsubread)
 
-name <- "SRR6078292"
 bam_files <- list.files("mapping/Rsubread", pattern="*bam", full.names=TRUE)
 fcounts <- featureCounts(bam_files, annot.inbuilt = "hg38", isPairedEnd=TRUE)
 
+```
+
+
+## 4. Differential expression analysis
+
+[DESeq2](https://bioconductor.org/packages/release/bioc/html/DESeq2.html)
+
+Input files are count matrix and annotation table containing information about samples.
+Make sure that the columns of the count matrix and the rows of the annotation table are in the same order!
+
+```r
+# counts
+cts <- fcounts$counts
+# annotaion table
+coldata <- data.frame(
+  condition = c(rep("C",3),rep("FA",3)), 
+  row.names = c("SRR6078288","SRR6078289","SRR6078290","SRR6078291","SRR6078292","SRR6078293")
+)
+coldata$condition <- factor(coldata$condition, levels=c("C","FA"))
+
+# DE analysis
+require("DESeq2")
+dds <- DESeqDataSetFromMatrix(
+  countData = cts,
+  colData = coldata,
+  design = ~ condition
+)
+dds <- DESeq(dds)
+res <- results(dds)
+
+# shrink LFC values (for ranking and visualization)
+resLFC <- lfcShrink(dds, coef=1, type="normal")
+
+# viz
+plotMA(resLFC, ylim=c(-2,2))
 ```
 
 

@@ -1,15 +1,20 @@
 # Requirements
 
-Create conda enviroment with all dependencies (you can choose to install only some of these).
+Create conda enviroment with dependencies (you can choose to install only some of these).
 
 ```bash
-conda create -n rna
+conda create -y -n rna python=3.6
 conda activate rna
-conda install -c bioconda sra-tools fastqc trimmomatic star hisat2 subread bioconductor-rsubread samtools bedtools
+conda install -y -c conda-forge r=4.1.0
+conda install -y -c bioconda sra-tools parallel-fastq-dump fastqc trimmomatic star hisat2 subread samtools bedtools
 conda env export --name rna > rna_env.yml
 ```
+After activating enviroment, install R dependencies directly from R (not using conda here because of the version conflicts).
 
-THe entire enviroment comes up to 380 Mb.
+```r
+install.packages("BiocManager")
+BiocManager::install(pkgs = c("Rsubread","DESeq2","fgsea","clusterprofiler","topGO"))
+```
 
 Recommended is to have at least 6 cores available to run the steps described below.
 How to find out how many cores do you have? Run `lscpu` command and look for these lines in the output:
@@ -26,13 +31,20 @@ Never use all of CPUs for the analysis you are running - your system needs some 
 
 # Analysis
 
+Download raw data. **This will take a lot of time!** Approx. ~1h per sample. You should download at least 3 control and 3 treatment samples.
+
+```
+nth=6
+name=SRR6078292
+parallel-fastq-dump --sra-id ${name} --threads ${nth} --outdir raw_reads --split-files --gzip
+```
+
+
 ## 1. QC
 
 [FASTQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)
 
 ```bash
-nth=6
-name=SRR6078292
 fastq_r1=raw_reads/${name}_1.fastq.gz
 fastq_r2=raw_reads/${name}_2.fastq.gz
 mkdir logs
@@ -188,7 +200,7 @@ align.stat <- align(
 
 ## 3. Read counting 
 
-`featureCounts`
+[featureCounts](http://manpages.org/featurecounts)
 
 ```bash
 bam=mapping/Subread/${name}.bam
@@ -209,6 +221,7 @@ bam_files <- list.files("mapping/Rsubread", pattern="*bam", full.names=TRUE)
 fcounts <- featureCounts(bam_files, annot.inbuilt = "hg38", isPairedEnd=TRUE)
 
 ```
+
 
 # Other resources
 

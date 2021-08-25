@@ -1,0 +1,75 @@
+
+        ==========     _____ _    _ ____  _____  ______          _____  
+        =====         / ____| |  | |  _ \|  __ \|  ____|   /\   |  __ \ 
+          =====      | (___ | |  | | |_) | |__) | |__     /  \  | |  | |
+            ====      \___ \| |  | |  _ <|  _  /|  __|   / /\ \ | |  | |
+              ====    ____) | |__| | |_) | | \ \| |____ / ____ \| |__| |
+        ==========   |_____/ \____/|____/|_|  \_\______/_/    \_\_____/
+	  v2.0.1
+
+//================================= setting ==================================\\
+||                                                                            ||
+||                Index name : GRCh38.fa.Subread_index                        ||
+||               Index space : base space                                     ||
+||                    Memory : 8000 Mbytes                                    ||
+||          Repeat threshold : 100 repeats                                    ||
+||              Gapped index : yes                                            ||
+||                                                                            ||
+||       Free / total memory : 8.5GB / 13.6GB                                 ||
+||                                                                            ||
+||               Input files : 1 file in total                                ||
+||                             o GRCh38.fa                                    ||
+||                                                                            ||
+\\============================================================================//
+
+//================================= Running ==================================\\
+||                                                                            ||
+|| Check the integrity of provided reference sequences ...                    ||
+|| There were 94 notes for reference sequences.                               ||
+|| The notes can be found in the log file, 'GRCh38.fa.Subread_index.log'.     ||
+|| Scan uninformative subreads in reference sequences ...                     ||
+|| 225010 uninformative subreads were found.                                  ||
+|| These subreads were excluded from index building.                          ||
+|| Estimate the index size...                                                 ||
+||    8%,   0 mins elapsed, rate=10953.8k bps/s                               ||
+||   16%,   0 mins elapsed, rate=10688.0k bps/s                               ||
+||   24%,   1 mins elapsed, rate=10580.4k bps/s                               ||
+||   33%,   1 mins elapsed, rate=10508.0k bps/s                               ||
+||   41%,   2 mins elapsed, rate=10478.0k bps/s                               ||
+||   49%,   2 mins elapsed, rate=10473.3k bps/s                               ||
+||   58%,   2 mins elapsed, rate=10558.8k bps/s                               ||
+||   66%,   3 mins elapsed, rate=10560.9k bps/s                               ||
+||   74%,   3 mins elapsed, rate=10735.3k bps/s                               ||
+||   83%,   4 mins elapsed, rate=10748.2k bps/s                               ||
+||   91%,   4 mins elapsed, rate=10810.3k bps/s                               ||
+|| 5.9 GB of memory is needed for index building.                             ||
+|| Build the index...                                                         ||
+||    8%,   0 mins elapsed, rate=6061.9k bps/s                                ||
+||   16%,   1 mins elapsed, rate=6027.0k bps/s                                ||
+||   24%,   2 mins elapsed, rate=5974.5k bps/s                                ||
+||   33%,   2 mins elapsed, rate=5928.9k bps/s                                ||
+||   41%,   3 mins elapsed, rate=5915.6k bps/s                                ||
+||   49%,   4 mins elapsed, rate=5915.0k bps/s                                ||
+||   58%,   5 mins elapsed, rate=5957.5k bps/s                                ||
+||   66%,   5 mins elapsed, rate=5937.1k bps/s                                ||
+||   74%,   6 mins elapsed, rate=6020.0k bps/s                                ||
+||   83%,   7 mins elapsed, rate=6011.1k bps/s                                ||
+||   91%,   7 mins elapsed, rate=6038.4k bps/s                                ||
+|| Save current index block...                                                ||
+||  [ 0.0% finished ]                                                         ||
+||  [ 10.0% finished ]                                                        ||
+||  [ 20.0% finished ]                                                        ||
+||  [ 30.0% finished ]                                                        ||
+||  [ 40.0% finished ]                                                        ||
+||  [ 50.0% finished ]                                                        ||
+||  [ 60.0% finished ]                                                        ||
+||  [ 70.0% finished ]                                                        ||
+||  [ 80.0% finished ]                                                        ||
+||  [ 90.0% finished ]                                                        ||
+||  [ 100.0% finished ]                                                       ||
+||                                                                            ||
+||                     Total running time: 21.3 minutes.                      ||
+||           Index GRCh38.fa.Subread_index was successfully built!            ||
+||                                                                            ||
+\\============================================================================//
+

@@ -1,0 +1,27 @@
+
+EXITING: FATAL INPUT ERROR: empty value for parameter "readFilesIn" in input "Command-Line"
+SOLUTION: use non-empty value for this parameter
+
+Aug 23 02:09:44 ...... FATAL ERROR, exiting
+
+EXITING because of fatal input ERROR: could not open readFilesIn=raw_reads/_1.fastq.gz
+
+Aug 23 02:10:21 ...... FATAL ERROR, exiting
+	STAR --genomeDir reference/STAR_index --runThreadN 6 --readFilesIn raw_reads/SRR6078292_1.fastq.gz raw_reads/SRR6078292_2.fastq.gz --outFileNamePrefix mapping/STAR/SRR6078292 --outSAMtype BAM SortedByCoordinate --outSAMunmapped Within --outSAMattributes Standard
+	STAR version: 2.7.9a   compiled: 2021-05-04T09:43:56-0400 vega:/home/dobin/data/STAR/STARcode/STAR.master/source
+Aug 23 02:11:11 ..... started STAR run
+Aug 23 02:11:11 ..... loading genome
+
+EXITING because of FATAL ERROR: could not open genome file reference/STAR_index//genomeParameters.txt
+SOLUTION: check that the path to genome files, specified in --genomeDir is correct and the files are present, and have user read permsissions
+
+Aug 23 02:11:11 ...... FATAL ERROR, exiting
+	STAR --genomeDir reference/STAR_index --runThreadN 6 --readFilesIn raw_reads/SRR6078292_1.fastq.gz raw_reads/SRR6078292_2.fastq.gz --outFileNamePrefix mapping/STAR/SRR6078292 --outSAMtype BAM SortedByCoordinate --outSAMunmapped Within --outSAMattributes Standard
+	STAR version: 2.7.9a   compiled: 2021-05-04T09:43:56-0400 vega:/home/dobin/data/STAR/STARcode/STAR.master/source
+Aug 23 02:20:55 ..... started STAR run
+Aug 23 02:20:55 ..... loading genome
+
+EXITING because of FATAL ERROR: could not open genome file reference/STAR_index//genomeParameters.txt
+SOLUTION: check that the path to genome files, specified in --genomeDir is correct and the files are present, and have user read permsissions
+
+Aug 23 02:20:55 ...... FATAL ERROR, exiting

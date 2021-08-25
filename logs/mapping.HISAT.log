@@ -1,0 +1,42 @@
+(ERR): "reference/GRCh38.fna" does not exist
+Exiting now ...
+Time loading forward index: 00:00:02
+Time loading reference: 00:00:00
+Multiseed full-index search: 00:33:03
+34701800 reads; of these:
+  34701800 (100.00%) were paired; of these:
+    2299030 (6.63%) aligned concordantly 0 times
+    29708058 (85.61%) aligned concordantly exactly 1 time
+    2694712 (7.77%) aligned concordantly >1 times
+    ----
+    2299030 pairs aligned concordantly 0 times; of these:
+      330481 (14.37%) aligned discordantly 1 time
+    ----
+    1968549 pairs aligned 0 times concordantly or discordantly; of these:
+      3937098 mates make up the pairs; of these:
+        2108134 (53.55%) aligned 0 times
+        1528172 (38.81%) aligned exactly 1 time
+        300792 (7.64%) aligned >1 times
+96.96% overall alignment rate
+Time searching: 00:33:04
+Overall time: 00:33:06
+Time loading forward index: 00:00:03
+Time loading reference: 00:00:01
+Multiseed full-index search: 00:44:33
+32306627 reads; of these:
+  32306627 (100.00%) were paired; of these:
+    1489104 (4.61%) aligned concordantly 0 times
+    26369980 (81.62%) aligned concordantly exactly 1 time
+    4447543 (13.77%) aligned concordantly >1 times
+    ----
+    1489104 pairs aligned concordantly 0 times; of these:
+      98331 (6.60%) aligned discordantly 1 time
+    ----
+    1390773 pairs aligned 0 times concordantly or discordantly; of these:
+      2781546 mates make up the pairs; of these:
+        1335083 (48.00%) aligned 0 times
+        1111450 (39.96%) aligned exactly 1 time
+        335013 (12.04%) aligned >1 times
+97.93% overall alignment rate
+Time searching: 00:44:35
+Overall time: 00:44:38

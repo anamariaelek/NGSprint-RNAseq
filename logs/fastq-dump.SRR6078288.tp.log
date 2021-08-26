@@ -1,0 +1,26 @@
+batch_hackh.sh: line 14: parallel-fastq-dump: command not found
+batch_hackh.sh: line 15: parallel-fastq-dump: command not found
+2021-08-25 20:17:53,112 - SRR ids: ['SRR6078288']
+2021-08-25 20:17:53,112 - extra args: ['--split-files', '--gzip']
+2021-08-25 20:17:53,115 - tempdir: /tmp/pfd_kjur8xbx
+2021-08-25 20:17:53,115 - CMD: sra-stat --meta --quick SRR6078288
+2021-08-25 20:17:56,156 - SRR6078288 spots: 32306627
+2021-08-25 20:17:56,157 - blocks: [[1, 5384437], [5384438, 10768874], [10768875, 16153311], [16153312, 21537748], [21537749, 26922185], [26922186, 32306627]]
+2021-08-25 20:17:56,157 - CMD: fastq-dump -N 1 -X 5384437 -O /tmp/pfd_kjur8xbx/0 --split-files --gzip SRR6078288
+2021-08-25 20:17:56,161 - CMD: fastq-dump -N 5384438 -X 10768874 -O /tmp/pfd_kjur8xbx/1 --split-files --gzip SRR6078288
+2021-08-25 20:17:56,164 - CMD: fastq-dump -N 10768875 -X 16153311 -O /tmp/pfd_kjur8xbx/2 --split-files --gzip SRR6078288
+2021-08-25 20:17:56,167 - CMD: fastq-dump -N 16153312 -X 21537748 -O /tmp/pfd_kjur8xbx/3 --split-files --gzip SRR6078288
+2021-08-25 20:17:56,170 - CMD: fastq-dump -N 21537749 -X 26922185 -O /tmp/pfd_kjur8xbx/4 --split-files --gzip SRR6078288
+2021-08-25 20:17:56,173 - CMD: fastq-dump -N 26922186 -X 32306627 -O /tmp/pfd_kjur8xbx/5 --split-files --gzip SRR6078288
+Read 5384437 spots for SRR6078288
+Written 5384437 spots for SRR6078288
+Read 5384442 spots for SRR6078288
+Written 5384442 spots for SRR6078288
+Read 5384437 spots for SRR6078288
+Written 5384437 spots for SRR6078288
+Read 5384437 spots for SRR6078288
+Written 5384437 spots for SRR6078288
+Read 5384437 spots for SRR6078288
+Written 5384437 spots for SRR6078288
+Read 5384437 spots for SRR6078288
+Written 5384437 spots for SRR6078288

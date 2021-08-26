@@ -1,0 +1,24 @@
+2021-08-26 00:47:17,877 - SRR ids: ['SRR6078291']
+2021-08-26 00:47:17,877 - extra args: ['--split-files', '--gzip']
+2021-08-26 00:47:17,879 - tempdir: /tmp/pfd_u0kbti01
+2021-08-26 00:47:17,879 - CMD: sra-stat --meta --quick SRR6078291
+2021-08-26 00:47:21,303 - SRR6078291 spots: 32657416
+2021-08-26 00:47:21,303 - blocks: [[1, 5442902], [5442903, 10885804], [10885805, 16328706], [16328707, 21771608], [21771609, 27214510], [27214511, 32657416]]
+2021-08-26 00:47:21,303 - CMD: fastq-dump -N 1 -X 5442902 -O /tmp/pfd_u0kbti01/0 --split-files --gzip SRR6078291
+2021-08-26 00:47:21,307 - CMD: fastq-dump -N 5442903 -X 10885804 -O /tmp/pfd_u0kbti01/1 --split-files --gzip SRR6078291
+2021-08-26 00:47:21,308 - CMD: fastq-dump -N 10885805 -X 16328706 -O /tmp/pfd_u0kbti01/2 --split-files --gzip SRR6078291
+2021-08-26 00:47:21,310 - CMD: fastq-dump -N 16328707 -X 21771608 -O /tmp/pfd_u0kbti01/3 --split-files --gzip SRR6078291
+2021-08-26 00:47:21,312 - CMD: fastq-dump -N 21771609 -X 27214510 -O /tmp/pfd_u0kbti01/4 --split-files --gzip SRR6078291
+2021-08-26 00:47:21,314 - CMD: fastq-dump -N 27214511 -X 32657416 -O /tmp/pfd_u0kbti01/5 --split-files --gzip SRR6078291
+Read 5442902 spots for SRR6078291
+Written 5442902 spots for SRR6078291
+Read 5442902 spots for SRR6078291
+Written 5442902 spots for SRR6078291
+Read 5442906 spots for SRR6078291
+Written 5442906 spots for SRR6078291
+Read 5442902 spots for SRR6078291
+Written 5442902 spots for SRR6078291
+Read 5442902 spots for SRR6078291
+Written 5442902 spots for SRR6078291
+Read 5442902 spots for SRR6078291
+Written 5442902 spots for SRR6078291

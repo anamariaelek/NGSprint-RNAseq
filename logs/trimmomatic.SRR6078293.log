@@ -1,0 +1,6 @@
+TrimmomaticPE: Started with arguments:
+ -threads 6 -phred33 raw_reads/SRR6078293_1.fastq.gz raw_reads/SRR6078293_2.fastq.gz trimmed_reads/SRR6078293_1.tp.fastq.gz trimmed_reads/SRR6078293_1.tu.fastq.gz trimmed_reads/SRR6078293_2.tp.fastq.gz trimmed_reads/SRR6078293_2.tu.fastq.gz SLIDINGWINDOW:4:20 ILLUMINACLIP:trimmed_reads/adapters_NexteraPE-PE.fasta:2:30:10
+Using Long Clipping Sequence: 'AGATGTGTATAAGAGACAG>PrefixNX/2AGATGTGTATAAGAGACAG>Trans1TCGTCGGCAGCGTCAGATGTGTATAAGAGACAG>Trans1_rcCTGTCTCTTATACACATCTGACGCTGCCGACGA>Trans2GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAG>Trans2_rcCTGTCTCTTATACACATCTCCGAGCCCACGAGAC'
+ILLUMINACLIP: Using 0 prefix pairs, 0 forward/reverse sequences, 1 forward only sequences, 0 reverse only sequences
+Input Read Pairs: 36662274 Both Surviving: 36053490 (98.34%) Forward Only Surviving: 435645 (1.19%) Reverse Only Surviving: 161418 (0.44%) Dropped: 11721 (0.03%)
+TrimmomaticPE: Completed successfully

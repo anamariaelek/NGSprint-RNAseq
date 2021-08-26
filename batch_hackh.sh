@@ -1,8 +1,7 @@
 #!/bin/bash
 
-#!/bin/bash
-
 ri=$1
+nth=$2 
 
 function hackh {
 
@@ -74,16 +73,4 @@ for rii in $ris
 do
 	hackh ${rii} ${nth}
 done
-
-B
-B
-B
-B
-B
-B
-B
-B
-B
-B
-B
 

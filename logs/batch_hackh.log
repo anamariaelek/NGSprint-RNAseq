@@ -1,0 +1,1888 @@
+# Will download SRR6078288,SRR6078289,SRR6078290,SRR6078291,SRR6078292,SRR6078293 to 
+mkdir: missing operand
+Try 'mkdir --help' for more information.
+mkdir: cannot create directory ‘logs’: File exists
+mkdir: cannot create directory ‘trimmed_reads’: File exists
+# Downloading 
+2021-08-25 20:17:53,112 - SRR ids: ['SRR6078288']
+2021-08-25 20:17:53,112 - extra args: ['--split-files', '--gzip']
+2021-08-25 20:17:53,115 - tempdir: /tmp/pfd_kjur8xbx
+2021-08-25 20:17:53,115 - CMD: sra-stat --meta --quick SRR6078288
+2021-08-25 20:17:56,156 - SRR6078288 spots: 32306627
+2021-08-25 20:17:56,157 - blocks: [[1, 5384437], [5384438, 10768874], [10768875, 16153311], [16153312, 21537748], [21537749, 26922185], [26922186, 32306627]]
+2021-08-25 20:17:56,157 - CMD: fastq-dump -N 1 -X 5384437 -O /tmp/pfd_kjur8xbx/0 --split-files --gzip SRR6078288
+2021-08-25 20:17:56,161 - CMD: fastq-dump -N 5384438 -X 10768874 -O /tmp/pfd_kjur8xbx/1 --split-files --gzip SRR6078288
+2021-08-25 20:17:56,164 - CMD: fastq-dump -N 10768875 -X 16153311 -O /tmp/pfd_kjur8xbx/2 --split-files --gzip SRR6078288
+2021-08-25 20:17:56,167 - CMD: fastq-dump -N 16153312 -X 21537748 -O /tmp/pfd_kjur8xbx/3 --split-files --gzip SRR6078288
+2021-08-25 20:17:56,170 - CMD: fastq-dump -N 21537749 -X 26922185 -O /tmp/pfd_kjur8xbx/4 --split-files --gzip SRR6078288
+2021-08-25 20:17:56,173 - CMD: fastq-dump -N 26922186 -X 32306627 -O /tmp/pfd_kjur8xbx/5 --split-files --gzip SRR6078288
+Read 5384437 spots for SRR6078288
+Written 5384437 spots for SRR6078288
+Read 5384442 spots for SRR6078288
+Written 5384442 spots for SRR6078288
+Read 5384437 spots for SRR6078288
+Written 5384437 spots for SRR6078288
+Read 5384437 spots for SRR6078288
+Written 5384437 spots for SRR6078288
+Read 5384437 spots for SRR6078288
+Written 5384437 spots for SRR6078288
+Read 5384437 spots for SRR6078288
+Written 5384437 spots for SRR6078288
+Started analysis of SRR6078288_1.fastq.gz
+Started analysis of SRR6078288_2.fastq.gz
+Approx 5% complete for SRR6078288_1.fastq.gz
+Approx 5% complete for SRR6078288_2.fastq.gz
+Approx 10% complete for SRR6078288_1.fastq.gz
+Approx 10% complete for SRR6078288_2.fastq.gz
+Approx 15% complete for SRR6078288_1.fastq.gz
+Approx 15% complete for SRR6078288_2.fastq.gz
+Approx 20% complete for SRR6078288_2.fastq.gz
+Approx 20% complete for SRR6078288_1.fastq.gz
+Approx 25% complete for SRR6078288_1.fastq.gz
+Approx 25% complete for SRR6078288_2.fastq.gz
+Approx 30% complete for SRR6078288_1.fastq.gz
+Approx 30% complete for SRR6078288_2.fastq.gz
+Approx 35% complete for SRR6078288_1.fastq.gz
+Approx 35% complete for SRR6078288_2.fastq.gz
+Approx 40% complete for SRR6078288_1.fastq.gz
+Approx 40% complete for SRR6078288_2.fastq.gz
+Approx 45% complete for SRR6078288_1.fastq.gz
+Approx 45% complete for SRR6078288_2.fastq.gz
+Approx 50% complete for SRR6078288_1.fastq.gz
+Approx 50% complete for SRR6078288_2.fastq.gz
+Approx 55% complete for SRR6078288_1.fastq.gz
+Approx 55% complete for SRR6078288_2.fastq.gz
+Approx 60% complete for SRR6078288_1.fastq.gz
+Approx 65% complete for SRR6078288_1.fastq.gz
+Approx 60% complete for SRR6078288_2.fastq.gz
+Approx 65% complete for SRR6078288_2.fastq.gz
+Approx 70% complete for SRR6078288_1.fastq.gz
+Approx 70% complete for SRR6078288_2.fastq.gz
+Approx 75% complete for SRR6078288_1.fastq.gz
+Approx 75% complete for SRR6078288_2.fastq.gz
+Approx 80% complete for SRR6078288_1.fastq.gz
+Approx 80% complete for SRR6078288_2.fastq.gz
+Approx 85% complete for SRR6078288_1.fastq.gz
+Approx 85% complete for SRR6078288_2.fastq.gz
+Approx 90% complete for SRR6078288_1.fastq.gz
+Approx 90% complete for SRR6078288_2.fastq.gz
+Approx 95% complete for SRR6078288_1.fastq.gz
+Approx 95% complete for SRR6078288_2.fastq.gz
+Analysis complete for SRR6078288_1.fastq.gz
+Analysis complete for SRR6078288_2.fastq.gz
+TrimmomaticPE: Started with arguments:
+ -threads 6 -phred33 raw_reads/SRR6078288_1.fastq.gz raw_reads/SRR6078288_2.fastq.gz trimmed_reads/SRR6078288_1.tp.fastq.gz trimmed_reads/SRR6078288_1.tu.fastq.gz trimmed_reads/SRR6078288_2.tp.fastq.gz trimmed_reads/SRR6078288_2.tu.fastq.gz SLIDINGWINDOW:4:20 ILLUMINACLIP:trimmed_reads/adapters_NexteraPE-PE.fasta:2:30:10
+Using Long Clipping Sequence: 'AGATGTGTATAAGAGACAG>PrefixNX/2AGATGTGTATAAGAGACAG>Trans1TCGTCGGCAGCGTCAGATGTGTATAAGAGACAG>Trans1_rcCTGTCTCTTATACACATCTGACGCTGCCGACGA>Trans2GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAG>Trans2_rcCTGTCTCTTATACACATCTCCGAGCCCACGAGAC'
+ILLUMINACLIP: Using 0 prefix pairs, 0 forward/reverse sequences, 1 forward only sequences, 0 reverse only sequences
+Input Read Pairs: 32306627 Both Surviving: 31785358 (98.39%) Forward Only Surviving: 394010 (1.22%) Reverse Only Surviving: 118398 (0.37%) Dropped: 8861 (0.03%)
+TrimmomaticPE: Completed successfully
+Started analysis of SRR6078288_1.tp.fastq.gz
+Started analysis of SRR6078288_2.tp.fastq.gz
+Approx 5% complete for SRR6078288_2.tp.fastq.gz
+Approx 5% complete for SRR6078288_1.tp.fastq.gz
+Approx 10% complete for SRR6078288_2.tp.fastq.gz
+Approx 10% complete for SRR6078288_1.tp.fastq.gz
+Approx 15% complete for SRR6078288_2.tp.fastq.gz
+Approx 20% complete for SRR6078288_2.tp.fastq.gz
+Approx 15% complete for SRR6078288_1.tp.fastq.gz
+Approx 25% complete for SRR6078288_2.tp.fastq.gz
+Approx 30% complete for SRR6078288_2.tp.fastq.gz
+Approx 20% complete for SRR6078288_1.tp.fastq.gz
+Approx 35% complete for SRR6078288_2.tp.fastq.gz
+Approx 25% complete for SRR6078288_1.tp.fastq.gz
+Approx 40% complete for SRR6078288_2.tp.fastq.gz
+Approx 45% complete for SRR6078288_2.tp.fastq.gz
+Approx 30% complete for SRR6078288_1.tp.fastq.gz
+Approx 50% complete for SRR6078288_2.tp.fastq.gz
+Approx 35% complete for SRR6078288_1.tp.fastq.gz
+Approx 55% complete for SRR6078288_2.tp.fastq.gz
+Approx 40% complete for SRR6078288_1.tp.fastq.gz
+Approx 60% complete for SRR6078288_2.tp.fastq.gz
+Approx 65% complete for SRR6078288_2.tp.fastq.gz
+Approx 45% complete for SRR6078288_1.tp.fastq.gz
+Approx 70% complete for SRR6078288_2.tp.fastq.gz
+Approx 50% complete for SRR6078288_1.tp.fastq.gz
+Approx 55% complete for SRR6078288_1.tp.fastq.gz
+Approx 75% complete for SRR6078288_2.tp.fastq.gz
+Approx 60% complete for SRR6078288_1.tp.fastq.gz
+Approx 80% complete for SRR6078288_2.tp.fastq.gz
+Approx 65% complete for SRR6078288_1.tp.fastq.gz
+Approx 70% complete for SRR6078288_1.tp.fastq.gz
+Approx 85% complete for SRR6078288_2.tp.fastq.gz
+Approx 75% complete for SRR6078288_1.tp.fastq.gz
+Approx 90% complete for SRR6078288_2.tp.fastq.gz
+Approx 80% complete for SRR6078288_1.tp.fastq.gz
+Approx 95% complete for SRR6078288_2.tp.fastq.gz
+Approx 85% complete for SRR6078288_1.tp.fastq.gz
+Analysis complete for SRR6078288_2.tp.fastq.gz
+Approx 90% complete for SRR6078288_1.tp.fastq.gz
+Approx 95% complete for SRR6078288_1.tp.fastq.gz
+Analysis complete for SRR6078288_1.tp.fastq.gz
+
+        ==========     _____ _    _ ____  _____  ______          _____  
+        =====         / ____| |  | |  _ \|  __ \|  ____|   /\   |  __ \ 
+          =====      | (___ | |  | | |_) | |__) | |__     /  \  | |  | |
+            ====      \___ \| |  | |  _ <|  _  /|  __|   / /\ \ | |  | |
+              ====    ____) | |__| | |_) | | \ \| |____ / ____ \| |__| |
+        ==========   |_____/ \____/|____/|_|  \_\______/_/    \_\_____/
+	  v2.0.1
+
+//================================= setting ==================================\\
+||                                                                            ||
+|| Function      : Read alignment (RNA-Seq)                                   ||
+|| Input file 1  : SRR6078288_1.tp.fastq.gz                                   ||
+|| Input file 2  : SRR6078288_2.tp.fastq.gz                                   ||
+|| Output file   : SRR6078288.bam (BAM)                                       ||
+|| Index name    : GRCh38.fa.Subread_index                                    ||
+||                                                                            ||
+||                    ------------------------------------                    ||
+||                                                                            ||
+||                               Threads : 6                                  ||
+||                          Phred offset : 33                                 ||
+||               # of extracted subreads : 10                                 ||
+||                        Min read1 vote : 3                                  ||
+||                        Min read2 vote : 1                                  ||
+||                     Max fragment size : 600                                ||
+||                     Min fragment size : 50                                 ||
+||                        Max mismatches : 3                                  ||
+||                      Max indel length : 5                                  ||
+||            Report multi-mapping reads : no                                 ||
+|| Max alignments per multi-mapping read : 1                                  ||
+||                                                                            ||
+\\============================================================================//
+
+//================ Running (25-Aug-2021 21:03:28, pid=105152) ================\\
+||                                                                            ||
+|| Check the input reads.                                                     ||
+|| The input file contains base space reads.                                  ||
+|| Initialise the memory objects.                                             ||
+|| Estimate the mean read length.                                             ||
+|| The range of Phred scores observed in the data is [2,41]                   ||
+|| Create the output BAM file.                                                ||
+|| Check the index.                                                           ||
+|| Init the voting space.                                                     ||
+|| Global environment is initialised.                                         ||
+|| Load the 1-th index block...                                               ||
+|| The index block has been loaded.                                           ||
+|| Start read mapping in chunk.                                               ||
+||    0% completed, 0.2 mins elapsed, rate=22.8k fragments per second         ||
+||    6% completed, 2.2 mins elapsed, rate=16.9k fragments per second         ||
+||   Estimated fragment length : 180 bp                                       ||
+||    8% completed, 2.8 mins elapsed, rate=14.6k fragments per second         ||
+||    8% completed, 2.9 mins elapsed, rate=14.3k fragments per second         ||
+||    8% completed, 3.2 mins elapsed, rate=13.8k fragments per second         ||
+||    9% completed, 3.4 mins elapsed, rate=13.6k fragments per second         ||
+||    9% completed, 3.6 mins elapsed, rate=13.3k fragments per second         ||
+||    9% completed, 3.7 mins elapsed, rate=13.1k fragments per second         ||
+||   10% completed, 4.0 mins elapsed, rate=12.8k fragments per second         ||
+||   10% completed, 4.2 mins elapsed, rate=12.6k fragments per second         ||
+||   10% completed, 4.4 mins elapsed, rate=12.4k fragments per second         ||
+||   11% completed, 4.6 mins elapsed, rate=12.3k fragments per second         ||
+||   11% completed, 4.8 mins elapsed, rate=12.2k fragments per second         ||
+|| Start read mapping in chunk.                                               ||
+||   11% completed, 4.8 mins elapsed, rate=12.7k fragments per second         ||
+||   18% completed, 6.8 mins elapsed, rate=14.1k fragments per second         ||
+||   20% completed, 7.5 mins elapsed, rate=13.2k fragments per second         ||
+||   20% completed, 7.8 mins elapsed, rate=13.0k fragments per second         ||
+||   20% completed, 8.1 mins elapsed, rate=12.8k fragments per second         ||
+||   21% completed, 8.4 mins elapsed, rate=12.6k fragments per second         ||
+||   21% completed, 8.6 mins elapsed, rate=12.4k fragments per second         ||
+||   21% completed, 8.9 mins elapsed, rate=12.2k fragments per second         ||
+||   22% completed, 9.2 mins elapsed, rate=12.1k fragments per second         ||
+||   22% completed, 9.5 mins elapsed, rate=11.9k fragments per second         ||
+||   23% completed, 9.8 mins elapsed, rate=11.7k fragments per second         ||
+|| Start read mapping in chunk.                                               ||
+||   23% completed,  10 mins elapsed, rate=11.9k fragments per second         ||
+||   30% completed,  12 mins elapsed, rate=12.8k fragments per second         ||
+||   31% completed,  12 mins elapsed, rate=12.3k fragments per second         ||
+||   32% completed,  13 mins elapsed, rate=12.1k fragments per second         ||
+||   32% completed,  13 mins elapsed, rate=12.0k fragments per second         ||
+||   32% completed,  13 mins elapsed, rate=11.8k fragments per second         ||
+||   33% completed,  14 mins elapsed, rate=11.7k fragments per second         ||
+||   33% completed,  14 mins elapsed, rate=11.5k fragments per second         ||
+||   34% completed,  14 mins elapsed, rate=11.4k fragments per second         ||
+||   34% completed,  15 mins elapsed, rate=11.3k fragments per second         ||
+||   34% completed,  15 mins elapsed, rate=11.2k fragments per second         ||
+|| Start read mapping in chunk.                                               ||
+||   35% completed,  15 mins elapsed, rate=11.3k fragments per second         ||
+||   41% completed,  17 mins elapsed, rate=11.9k fragments per second         ||
+||   43% completed,  18 mins elapsed, rate=11.7k fragments per second         ||
+||   43% completed,  18 mins elapsed, rate=11.6k fragments per second         ||
+||   44% completed,  19 mins elapsed, rate=11.5k fragments per second         ||
+||   44% completed,  19 mins elapsed, rate=11.4k fragments per second         ||
+||   44% completed,  19 mins elapsed, rate=11.3k fragments per second         ||
+||   45% completed,  20 mins elapsed, rate=11.2k fragments per second         ||
+||   45% completed,  20 mins elapsed, rate=11.1k fragments per second         ||
+||   46% completed,  20 mins elapsed, rate=10.9k fragments per second         ||
+||   46% completed,  21 mins elapsed, rate=10.8k fragments per second         ||
+||   46% completed,  21 mins elapsed, rate=10.7k fragments per second         ||
+|| Start read mapping in chunk.                                               ||
+||   47% completed,  21 mins elapsed, rate=10.8k fragments per second         ||
+||   52% completed,  23 mins elapsed, rate=11.3k fragments per second         ||
+||   55% completed,  24 mins elapsed, rate=11.3k fragments per second         ||
+||   55% completed,  24 mins elapsed, rate=11.1k fragments per second         ||
+||   55% completed,  25 mins elapsed, rate=11.1k fragments per second         ||
+||   56% completed,  25 mins elapsed, rate=11.0k fragments per second         ||
+||   56% completed,  25 mins elapsed, rate=10.9k fragments per second         ||
+||   56% completed,  26 mins elapsed, rate=10.9k fragments per second         ||
+||   57% completed,  26 mins elapsed, rate=10.8k fragments per second         ||
+||   57% completed,  26 mins elapsed, rate=10.8k fragments per second         ||
+||   57% completed,  27 mins elapsed, rate=10.7k fragments per second         ||
+||   58% completed,  27 mins elapsed, rate=10.7k fragments per second         ||
+|| Start read mapping in chunk.                                               ||
+||   57% completed,  27 mins elapsed, rate=10.7k fragments per second         ||
+||   62% completed,  29 mins elapsed, rate=11.3k fragments per second         ||
+||   65% completed,  30 mins elapsed, rate=11.3k fragments per second         ||
+||   65% completed,  30 mins elapsed, rate=11.3k fragments per second         ||
+||   66% completed,  30 mins elapsed, rate=11.2k fragments per second         ||
+||   66% completed,  31 mins elapsed, rate=11.1k fragments per second         ||
+||   66% completed,  31 mins elapsed, rate=11.1k fragments per second         ||
+||   67% completed,  31 mins elapsed, rate=11.0k fragments per second         ||
+||   67% completed,  31 mins elapsed, rate=11.0k fragments per second         ||
+||   67% completed,  32 mins elapsed, rate=11.0k fragments per second         ||
+||   68% completed,  32 mins elapsed, rate=10.9k fragments per second         ||
+||   68% completed,  32 mins elapsed, rate=10.9k fragments per second         ||
+|| Start read mapping in chunk.                                               ||
+||   67% completed,  32 mins elapsed, rate=10.8k fragments per second         ||
+||   72% completed,  34 mins elapsed, rate=11.2k fragments per second         ||
+||   74% completed,  35 mins elapsed, rate=11.2k fragments per second         ||
+||   74% completed,  35 mins elapsed, rate=11.2k fragments per second         ||
+||   75% completed,  35 mins elapsed, rate=11.1k fragments per second         ||
+||   75% completed,  36 mins elapsed, rate=11.0k fragments per second         ||
+||   76% completed,  36 mins elapsed, rate=11.0k fragments per second         ||
+||   76% completed,  37 mins elapsed, rate=10.9k fragments per second         ||
+||   76% completed,  37 mins elapsed, rate=10.8k fragments per second         ||
+||   77% completed,  37 mins elapsed, rate=10.8k fragments per second         ||
+||   77% completed,  38 mins elapsed, rate=10.7k fragments per second         ||
+|| Start read mapping in chunk.                                               ||
+||   77% completed,  38 mins elapsed, rate=10.7k fragments per second         ||
+||   83% completed,  40 mins elapsed, rate=11.0k fragments per second         ||
+||   84% completed,  41 mins elapsed, rate=11.0k fragments per second         ||
+||   84% completed,  41 mins elapsed, rate=10.9k fragments per second         ||
+||   85% completed,  41 mins elapsed, rate=10.9k fragments per second         ||
+||   85% completed,  42 mins elapsed, rate=10.9k fragments per second         ||
+||   85% completed,  42 mins elapsed, rate=10.8k fragments per second         ||
+||   86% completed,  42 mins elapsed, rate=10.7k fragments per second         ||
+||   86% completed,  43 mins elapsed, rate=10.7k fragments per second         ||
+||   86% completed,  43 mins elapsed, rate=10.6k fragments per second         ||
+||   87% completed,  44 mins elapsed, rate=10.6k fragments per second         ||
+||   87% completed,  44 mins elapsed, rate=10.5k fragments per second         ||
+|| Start read mapping in chunk.                                               ||
+||   87% completed,  44 mins elapsed, rate=10.5k fragments per second         ||
+||   94% completed,  46 mins elapsed, rate=10.7k fragments per second         ||
+||   94% completed,  47 mins elapsed, rate=10.5k fragments per second         ||
+||   95% completed,  48 mins elapsed, rate=10.5k fragments per second         ||
+||   95% completed,  48 mins elapsed, rate=10.4k fragments per second         ||
+||   96% completed,  49 mins elapsed, rate=10.4k fragments per second         ||
+||   96% completed,  49 mins elapsed, rate=10.3k fragments per second         ||
+||   96% completed,  50 mins elapsed, rate=10.3k fragments per second         ||
+||   97% completed,  50 mins elapsed, rate=10.2k fragments per second         ||
+||   97% completed,  51 mins elapsed, rate=10.1k fragments per second         ||
+||   98% completed,  51 mins elapsed, rate=10.1k fragments per second         ||
+|| Start read mapping in chunk.                                               ||
+||   99% completed,  51 mins elapsed, rate=10.1k fragments per second         ||
+||   99% completed,  52 mins elapsed, rate=10.1k fragments per second         ||
+||   99% completed,  52 mins elapsed, rate=10.1k fragments per second         ||
+||   99% completed,  52 mins elapsed, rate=10.1k fragments per second         ||
+||   99% completed,  52 mins elapsed, rate=10.1k fragments per second         ||
+||   99% completed,  52 mins elapsed, rate=10.1k fragments per second         ||
+||   99% completed,  52 mins elapsed, rate=10.1k fragments per second         ||
+||   99% completed,  52 mins elapsed, rate=10.1k fragments per second         ||
+||   99% completed,  52 mins elapsed, rate=10.1k fragments per second         ||
+||   99% completed,  52 mins elapsed, rate=10.1k fragments per second         ||
+||                                                                            ||
+||                           Completed successfully.                          ||
+||                                                                            ||
+\\====================================    ====================================//
+
+//================================   Summary =================================\\
+||                                                                            ||
+||             Total fragments : 31,785,358                                   ||
+||                      Mapped : 26,153,532 (82.3%)                           ||
+||             Uniquely mapped : 26,153,532                                   ||
+||               Multi-mapping : 0                                            ||
+||                                                                            ||
+||                    Unmapped : 5,631,826                                    ||
+||                                                                            ||
+||             Properly paired : 20,783,632                                   ||
+||         Not properly paired : 5,369,900                                    ||
+||                   Singleton : 1,061,844                                    ||
+||                    Chimeric : 342,680                                      ||
+||       Unexpected strandness : 21,953                                       ||
+||  Unexpected fragment length : 3,896,521                                    ||
+||       Unexpected read order : 46,902                                       ||
+||                                                                            ||
+||                      Indels : 100,714                                      ||
+||                                                                            ||
+||                Running time : 52.6 minutes                                 ||
+||                                                                            ||
+\\============================================================================//
+
+mkdir: cannot create directory ‘logs’: File exists
+mkdir: cannot create directory ‘trimmed_reads’: File exists
+# Downloading 
+2021-08-25 21:56:03,750 - SRR ids: ['SRR6078289']
+2021-08-25 21:56:03,750 - extra args: ['--split-files', '--gzip']
+2021-08-25 21:56:03,752 - tempdir: /tmp/pfd_p47b2v3a
+2021-08-25 21:56:03,753 - CMD: sra-stat --meta --quick SRR6078289
+2021-08-25 21:56:06,940 - SRR6078289 spots: 30674165
+2021-08-25 21:56:06,940 - blocks: [[1, 5112360], [5112361, 10224720], [10224721, 15337080], [15337081, 20449440], [20449441, 25561800], [25561801, 30674165]]
+2021-08-25 21:56:06,941 - CMD: fastq-dump -N 1 -X 5112360 -O /tmp/pfd_p47b2v3a/0 --split-files --gzip SRR6078289
+2021-08-25 21:56:06,943 - CMD: fastq-dump -N 5112361 -X 10224720 -O /tmp/pfd_p47b2v3a/1 --split-files --gzip SRR6078289
+2021-08-25 21:56:06,945 - CMD: fastq-dump -N 10224721 -X 15337080 -O /tmp/pfd_p47b2v3a/2 --split-files --gzip SRR6078289
+2021-08-25 21:56:06,947 - CMD: fastq-dump -N 15337081 -X 20449440 -O /tmp/pfd_p47b2v3a/3 --split-files --gzip SRR6078289
+2021-08-25 21:56:06,949 - CMD: fastq-dump -N 20449441 -X 25561800 -O /tmp/pfd_p47b2v3a/4 --split-files --gzip SRR6078289
+2021-08-25 21:56:06,951 - CMD: fastq-dump -N 25561801 -X 30674165 -O /tmp/pfd_p47b2v3a/5 --split-files --gzip SRR6078289
+Read 5112360 spots for SRR6078289
+Written 5112360 spots for SRR6078289
+Read 5112360 spots for SRR6078289
+Written 5112360 spots for SRR6078289
+Read 5112365 spots for SRR6078289
+Written 5112365 spots for SRR6078289
+Read 5112360 spots for SRR6078289
+Written 5112360 spots for SRR6078289
+Read 5112360 spots for SRR6078289
+Written 5112360 spots for SRR6078289
+Read 5112360 spots for SRR6078289
+Written 5112360 spots for SRR6078289
+Started analysis of SRR6078289_1.fastq.gz
+Started analysis of SRR6078289_2.fastq.gz
+Approx 5% complete for SRR6078289_2.fastq.gz
+Approx 5% complete for SRR6078289_1.fastq.gz
+Approx 10% complete for SRR6078289_2.fastq.gz
+Approx 10% complete for SRR6078289_1.fastq.gz
+Approx 15% complete for SRR6078289_2.fastq.gz
+Approx 20% complete for SRR6078289_2.fastq.gz
+Approx 15% complete for SRR6078289_1.fastq.gz
+Approx 25% complete for SRR6078289_2.fastq.gz
+Approx 20% complete for SRR6078289_1.fastq.gz
+Approx 30% complete for SRR6078289_2.fastq.gz
+Approx 35% complete for SRR6078289_2.fastq.gz
+Approx 25% complete for SRR6078289_1.fastq.gz
+Approx 30% complete for SRR6078289_1.fastq.gz
+Approx 40% complete for SRR6078289_2.fastq.gz
+Approx 35% complete for SRR6078289_1.fastq.gz
+Approx 45% complete for SRR6078289_2.fastq.gz
+Approx 40% complete for SRR6078289_1.fastq.gz
+Approx 45% complete for SRR6078289_1.fastq.gz
+Approx 50% complete for SRR6078289_2.fastq.gz
+Approx 50% complete for SRR6078289_1.fastq.gz
+Approx 55% complete for SRR6078289_1.fastq.gz
+Approx 55% complete for SRR6078289_2.fastq.gz
+Approx 60% complete for SRR6078289_1.fastq.gz
+Approx 60% complete for SRR6078289_2.fastq.gz
+Approx 65% complete for SRR6078289_1.fastq.gz
+Approx 65% complete for SRR6078289_2.fastq.gz
+Approx 70% complete for SRR6078289_1.fastq.gz
+Approx 70% complete for SRR6078289_2.fastq.gz
+Approx 75% complete for SRR6078289_1.fastq.gz
+Approx 75% complete for SRR6078289_2.fastq.gz
+Approx 80% complete for SRR6078289_2.fastq.gz
+Approx 80% complete for SRR6078289_1.fastq.gz
+Approx 85% complete for SRR6078289_2.fastq.gz
+Approx 85% complete for SRR6078289_1.fastq.gz
+Approx 90% complete for SRR6078289_2.fastq.gz
+Approx 95% complete for SRR6078289_2.fastq.gz
+Approx 90% complete for SRR6078289_1.fastq.gz
+Analysis complete for SRR6078289_2.fastq.gz
+Approx 95% complete for SRR6078289_1.fastq.gz
+Analysis complete for SRR6078289_1.fastq.gz
+TrimmomaticPE: Started with arguments:
+ -threads 6 -phred33 raw_reads/SRR6078289_1.fastq.gz raw_reads/SRR6078289_2.fastq.gz trimmed_reads/SRR6078289_1.tp.fastq.gz trimmed_reads/SRR6078289_1.tu.fastq.gz trimmed_reads/SRR6078289_2.tp.fastq.gz trimmed_reads/SRR6078289_2.tu.fastq.gz SLIDINGWINDOW:4:20 ILLUMINACLIP:trimmed_reads/adapters_NexteraPE-PE.fasta:2:30:10
+Using Long Clipping Sequence: 'AGATGTGTATAAGAGACAG>PrefixNX/2AGATGTGTATAAGAGACAG>Trans1TCGTCGGCAGCGTCAGATGTGTATAAGAGACAG>Trans1_rcCTGTCTCTTATACACATCTGACGCTGCCGACGA>Trans2GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAG>Trans2_rcCTGTCTCTTATACACATCTCCGAGCCCACGAGAC'
+ILLUMINACLIP: Using 0 prefix pairs, 0 forward/reverse sequences, 1 forward only sequences, 0 reverse only sequences
+Input Read Pairs: 30674165 Both Surviving: 30075609 (98.05%) Forward Only Surviving: 394489 (1.29%) Reverse Only Surviving: 191533 (0.62%) Dropped: 12534 (0.04%)
+TrimmomaticPE: Completed successfully
+Started analysis of SRR6078289_1.tp.fastq.gz
+Started analysis of SRR6078289_2.tp.fastq.gz
+Approx 5% complete for SRR6078289_1.tp.fastq.gz
+Approx 5% complete for SRR6078289_2.tp.fastq.gz
+Approx 10% complete for SRR6078289_2.tp.fastq.gz
+Approx 10% complete for SRR6078289_1.tp.fastq.gz
+Approx 15% complete for SRR6078289_1.tp.fastq.gz
+Approx 15% complete for SRR6078289_2.tp.fastq.gz
+Approx 20% complete for SRR6078289_1.tp.fastq.gz
+Approx 20% complete for SRR6078289_2.tp.fastq.gz
+Approx 25% complete for SRR6078289_1.tp.fastq.gz
+Approx 30% complete for SRR6078289_1.tp.fastq.gz
+Approx 25% complete for SRR6078289_2.tp.fastq.gz
+Approx 35% complete for SRR6078289_1.tp.fastq.gz
+Approx 40% complete for SRR6078289_1.tp.fastq.gz
+Approx 30% complete for SRR6078289_2.tp.fastq.gz
+Approx 35% complete for SRR6078289_2.tp.fastq.gz
+Approx 45% complete for SRR6078289_1.tp.fastq.gz
+Approx 40% complete for SRR6078289_2.tp.fastq.gz
+Approx 50% complete for SRR6078289_1.tp.fastq.gz
+Approx 45% complete for SRR6078289_2.tp.fastq.gz
+Approx 55% complete for SRR6078289_1.tp.fastq.gz
+Approx 50% complete for SRR6078289_2.tp.fastq.gz
+Approx 55% complete for SRR6078289_2.tp.fastq.gz
+Approx 60% complete for SRR6078289_1.tp.fastq.gz
+Approx 60% complete for SRR6078289_2.tp.fastq.gz
+Approx 65% complete for SRR6078289_2.tp.fastq.gz
+Approx 65% complete for SRR6078289_1.tp.fastq.gz
+Approx 70% complete for SRR6078289_2.tp.fastq.gz
+Approx 70% complete for SRR6078289_1.tp.fastq.gz
+Approx 75% complete for SRR6078289_2.tp.fastq.gz
+Approx 80% complete for SRR6078289_2.tp.fastq.gz
+Approx 75% complete for SRR6078289_1.tp.fastq.gz
+Approx 80% complete for SRR6078289_1.tp.fastq.gz
+Approx 85% complete for SRR6078289_2.tp.fastq.gz
+Approx 85% complete for SRR6078289_1.tp.fastq.gz
+Approx 90% complete for SRR6078289_1.tp.fastq.gz
+Approx 90% complete for SRR6078289_2.tp.fastq.gz
+Approx 95% complete for SRR6078289_1.tp.fastq.gz
+Approx 95% complete for SRR6078289_2.tp.fastq.gz
+Analysis complete for SRR6078289_1.tp.fastq.gz
+Analysis complete for SRR6078289_2.tp.fastq.gz
+
+        ==========     _____ _    _ ____  _____  ______          _____  
+        =====         / ____| |  | |  _ \|  __ \|  ____|   /\   |  __ \ 
+          =====      | (___ | |  | | |_) | |__) | |__     /  \  | |  | |
+            ====      \___ \| |  | |  _ <|  _  /|  __|   / /\ \ | |  | |
+              ====    ____) | |__| | |_) | | \ \| |____ / ____ \| |__| |
+        ==========   |_____/ \____/|____/|_|  \_\______/_/    \_\_____/
+	  v2.0.1
+
+//================================= setting ==================================\\
+||                                                                            ||
+|| Function      : Read alignment (RNA-Seq)                                   ||
+|| Input file 1  : SRR6078289_1.tp.fastq.gz                                   ||
+|| Input file 2  : SRR6078289_2.tp.fastq.gz                                   ||
+|| Output file   : SRR6078289.bam (BAM)                                       ||
+|| Index name    : GRCh38.fa.Subread_index                                    ||
+||                                                                            ||
+||                    ------------------------------------                    ||
+||                                                                            ||
+||                               Threads : 6                                  ||
+||                          Phred offset : 33                                 ||
+||               # of extracted subreads : 10                                 ||
+||                        Min read1 vote : 3                                  ||
+||                        Min read2 vote : 1                                  ||
+||                     Max fragment size : 600                                ||
+||                     Min fragment size : 50                                 ||
+||                        Max mismatches : 3                                  ||
+||                      Max indel length : 5                                  ||
+||            Report multi-mapping reads : no                                 ||
+|| Max alignments per multi-mapping read : 1                                  ||
+||                                                                            ||
+\\============================================================================//
+
+//================ Running (25-Aug-2021 22:40:01, pid=109867) ================\\
+||                                                                            ||
+|| Check the input reads.                                                     ||
+|| The input file contains base space reads.                                  ||
+|| Initialise the memory objects.                                             ||
+|| Estimate the mean read length.                                             ||
+|| The range of Phred scores observed in the data is [2,41]                   ||
+|| Create the output BAM file.                                                ||
+|| Check the index.                                                           ||
+|| Init the voting space.                                                     ||
+|| Global environment is initialised.                                         ||
+|| Load the 1-th index block...                                               ||
+|| The index block has been loaded.                                           ||
+|| Start read mapping in chunk.                                               ||
+||    0% completed, 0.2 mins elapsed, rate=21.9k fragments per second         ||
+||    6% completed, 2.1 mins elapsed, rate=17.7k fragments per second         ||
+||   Estimated fragment length : 178 bp                                       ||
+||    8% completed, 2.5 mins elapsed, rate=16.2k fragments per second         ||
+||    8% completed, 2.6 mins elapsed, rate=16.4k fragments per second         ||
+||    8% completed, 2.7 mins elapsed, rate=16.7k fragments per second         ||
+||    9% completed, 2.8 mins elapsed, rate=17.0k fragments per second         ||
+||    9% completed, 2.8 mins elapsed, rate=17.2k fragments per second         ||
+||   10% completed, 2.9 mins elapsed, rate=17.4k fragments per second         ||
+||   10% completed, 3.0 mins elapsed, rate=17.6k fragments per second         ||
+||   11% completed, 3.1 mins elapsed, rate=17.8k fragments per second         ||
+||   11% completed, 3.2 mins elapsed, rate=18.0k fragments per second         ||
+|| Start read mapping in chunk.                                               ||
+||   11% completed, 3.3 mins elapsed, rate=19.0k fragments per second         ||
+||   18% completed, 5.1 mins elapsed, rate=18.5k fragments per second         ||
+||   20% completed, 5.6 mins elapsed, rate=17.6k fragments per second         ||
+||   20% completed, 5.7 mins elapsed, rate=17.7k fragments per second         ||
+||   20% completed, 5.7 mins elapsed, rate=17.7k fragments per second         ||
+||   21% completed, 5.8 mins elapsed, rate=17.8k fragments per second         ||
+||   21% completed, 5.9 mins elapsed, rate=17.8k fragments per second         ||
+||   21% completed, 6.0 mins elapsed, rate=17.9k fragments per second         ||
+||   22% completed, 6.1 mins elapsed, rate=17.9k fragments per second         ||
+||   22% completed, 6.2 mins elapsed, rate=18.0k fragments per second         ||
+||   23% completed, 6.3 mins elapsed, rate=18.1k fragments per second         ||
+|| Start read mapping in chunk.                                               ||
+||   23% completed, 6.5 mins elapsed, rate=18.6k fragments per second         ||
+||   30% completed, 8.3 mins elapsed, rate=18.4k fragments per second         ||
+||   32% completed, 8.8 mins elapsed, rate=17.8k fragments per second         ||
+||   32% completed, 8.9 mins elapsed, rate=17.8k fragments per second         ||
+||   32% completed, 9.0 mins elapsed, rate=17.8k fragments per second         ||
+||   33% completed, 9.1 mins elapsed, rate=17.9k fragments per second         ||
+||   33% completed, 9.2 mins elapsed, rate=17.9k fragments per second         ||
+||   33% completed, 9.2 mins elapsed, rate=17.9k fragments per second         ||
+||   34% completed, 9.3 mins elapsed, rate=17.9k fragments per second         ||
+||   34% completed, 9.4 mins elapsed, rate=17.9k fragments per second         ||
+||   35% completed, 9.5 mins elapsed, rate=17.9k fragments per second         ||
+||   35% completed, 9.6 mins elapsed, rate=18.0k fragments per second         ||
+|| Start read mapping in chunk.                                               ||
+||   35% completed, 9.8 mins elapsed, rate=18.3k fragments per second         ||
+||   42% completed,  11 mins elapsed, rate=18.2k fragments per second         ||
+||   44% completed,  12 mins elapsed, rate=17.8k fragments per second         ||
+||   44% completed,  12 mins elapsed, rate=17.8k fragments per second         ||
+||   45% completed,  12 mins elapsed, rate=17.8k fragments per second         ||
+||   45% completed,  12 mins elapsed, rate=17.8k fragments per second         ||
+||   45% completed,  12 mins elapsed, rate=17.7k fragments per second         ||
+||   46% completed,  12 mins elapsed, rate=17.7k fragments per second         ||
+||   46% completed,  12 mins elapsed, rate=17.7k fragments per second         ||
+||   46% completed,  12 mins elapsed, rate=17.7k fragments per second         ||
+||   47% completed,  12 mins elapsed, rate=17.7k fragments per second         ||
+||   47% completed,  13 mins elapsed, rate=17.7k fragments per second         ||
+|| Start read mapping in chunk.                                               ||
+||   47% completed,  13 mins elapsed, rate=18.0k fragments per second         ||
+||   54% completed,  15 mins elapsed, rate=17.9k fragments per second         ||
+||   56% completed,  15 mins elapsed, rate=17.6k fragments per second         ||
+||   56% completed,  15 mins elapsed, rate=17.6k fragments per second         ||
+||   57% completed,  15 mins elapsed, rate=17.6k fragments per second         ||
+||   57% completed,  15 mins elapsed, rate=17.6k fragments per second         ||
+||   57% completed,  16 mins elapsed, rate=17.6k fragments per second         ||
+||   58% completed,  16 mins elapsed, rate=17.6k fragments per second         ||
+||   58% completed,  16 mins elapsed, rate=17.6k fragments per second         ||
+||   59% completed,  16 mins elapsed, rate=17.6k fragments per second         ||
+||   59% completed,  16 mins elapsed, rate=17.5k fragments per second         ||
+|| Start read mapping in chunk.                                               ||
+||   59% completed,  16 mins elapsed, rate=17.7k fragments per second         ||
+||   66% completed,  18 mins elapsed, rate=17.8k fragments per second         ||
+||   67% completed,  18 mins elapsed, rate=17.5k fragments per second         ||
+||   68% completed,  19 mins elapsed, rate=17.5k fragments per second         ||
+||   68% completed,  19 mins elapsed, rate=17.5k fragments per second         ||
+||   68% completed,  19 mins elapsed, rate=17.5k fragments per second         ||
+||   69% completed,  19 mins elapsed, rate=17.5k fragments per second         ||
+||   69% completed,  19 mins elapsed, rate=17.5k fragments per second         ||
+||   70% completed,  19 mins elapsed, rate=17.5k fragments per second         ||
+||   70% completed,  19 mins elapsed, rate=17.5k fragments per second         ||
+||   70% completed,  19 mins elapsed, rate=17.5k fragments per second         ||
+||   71% completed,  19 mins elapsed, rate=17.5k fragments per second         ||
+||   71% completed,  20 mins elapsed, rate=17.5k fragments per second         ||
+|| Start read mapping in chunk.                                               ||
+||   71% completed,  20 mins elapsed, rate=17.6k fragments per second         ||
+||   77% completed,  21 mins elapsed, rate=17.8k fragments per second         ||
+||   79% completed,  22 mins elapsed, rate=17.8k fragments per second         ||
+||   79% completed,  22 mins elapsed, rate=17.8k fragments per second         ||
+||   80% completed,  22 mins elapsed, rate=17.8k fragments per second         ||
+||   80% completed,  22 mins elapsed, rate=17.8k fragments per second         ||
+||   80% completed,  22 mins elapsed, rate=17.8k fragments per second         ||
+||   81% completed,  22 mins elapsed, rate=17.8k fragments per second         ||
+||   81% completed,  23 mins elapsed, rate=17.8k fragments per second         ||
+||   82% completed,  23 mins elapsed, rate=17.8k fragments per second         ||
+|| Start read mapping in chunk.                                               ||
+||   81% completed,  23 mins elapsed, rate=17.7k fragments per second         ||
+||   87% completed,  25 mins elapsed, rate=17.7k fragments per second         ||
+||   89% completed,  25 mins elapsed, rate=17.5k fragments per second         ||
+||   89% completed,  25 mins elapsed, rate=17.5k fragments per second         ||
+||   89% completed,  25 mins elapsed, rate=17.5k fragments per second         ||
+||   90% completed,  25 mins elapsed, rate=17.5k fragments per second         ||
+||   90% completed,  26 mins elapsed, rate=17.5k fragments per second         ||
+||   90% completed,  26 mins elapsed, rate=17.5k fragments per second         ||
+||   91% completed,  26 mins elapsed, rate=17.4k fragments per second         ||
+||   91% completed,  26 mins elapsed, rate=17.4k fragments per second         ||
+||   92% completed,  26 mins elapsed, rate=17.4k fragments per second         ||
+||   92% completed,  26 mins elapsed, rate=17.4k fragments per second         ||
+|| Start read mapping in chunk.                                               ||
+||   92% completed,  26 mins elapsed, rate=17.5k fragments per second         ||
+||   97% completed,  28 mins elapsed, rate=17.4k fragments per second         ||
+||   98% completed,  28 mins elapsed, rate=17.4k fragments per second         ||
+||   98% completed,  28 mins elapsed, rate=17.4k fragments per second         ||
+||   98% completed,  28 mins elapsed, rate=17.4k fragments per second         ||
+||   99% completed,  28 mins elapsed, rate=17.4k fragments per second         ||
+||   99% completed,  28 mins elapsed, rate=17.4k fragments per second         ||
+||   99% completed,  28 mins elapsed, rate=17.4k fragments per second         ||
+||   99% completed,  28 mins elapsed, rate=17.4k fragments per second         ||
+||                                                                            ||
+||                           Completed successfully.                          ||
+||                                                                            ||
+\\====================================    ====================================//
+
+//================================   Summary =================================\\
+||                                                                            ||
+||             Total fragments : 30,075,609                                   ||
+||                      Mapped : 27,772,673 (92.3%)                           ||
+||             Uniquely mapped : 27,772,673                                   ||
+||               Multi-mapping : 0                                            ||
+||                                                                            ||
+||                    Unmapped : 2,302,936                                    ||
+||                                                                            ||
+||             Properly paired : 21,718,564                                   ||
+||         Not properly paired : 6,054,109                                    ||
+||                   Singleton : 1,067,552                                    ||
+||                    Chimeric : 271,382                                      ||
+||       Unexpected strandness : 17,074                                       ||
+||  Unexpected fragment length : 4,630,440                                    ||
+||       Unexpected read order : 67,661                                       ||
+||                                                                            ||
+||                      Indels : 141,611                                      ||
+||                                                                            ||
+||                Running time : 29.0 minutes                                 ||
+||                                                                            ||
+\\============================================================================//
+
+mkdir: cannot create directory ‘logs’: File exists
+mkdir: cannot create directory ‘trimmed_reads’: File exists
+# Downloading 
+2021-08-25 23:09:01,036 - SRR ids: ['SRR6078290']
+2021-08-25 23:09:01,036 - extra args: ['--split-files', '--gzip']
+2021-08-25 23:09:01,038 - tempdir: /tmp/pfd_ag2dmc5r
+2021-08-25 23:09:01,038 - CMD: sra-stat --meta --quick SRR6078290
+2021-08-25 23:09:04,955 - SRR6078290 spots: 33097871
+2021-08-25 23:09:04,955 - blocks: [[1, 5516311], [5516312, 11032622], [11032623, 16548933], [16548934, 22065244], [22065245, 27581555], [27581556, 33097871]]
+2021-08-25 23:09:04,955 - CMD: fastq-dump -N 1 -X 5516311 -O /tmp/pfd_ag2dmc5r/0 --split-files --gzip SRR6078290
+2021-08-25 23:09:04,958 - CMD: fastq-dump -N 5516312 -X 11032622 -O /tmp/pfd_ag2dmc5r/1 --split-files --gzip SRR6078290
+2021-08-25 23:09:04,960 - CMD: fastq-dump -N 11032623 -X 16548933 -O /tmp/pfd_ag2dmc5r/2 --split-files --gzip SRR6078290
+2021-08-25 23:09:04,961 - CMD: fastq-dump -N 16548934 -X 22065244 -O /tmp/pfd_ag2dmc5r/3 --split-files --gzip SRR6078290
+2021-08-25 23:09:04,963 - CMD: fastq-dump -N 22065245 -X 27581555 -O /tmp/pfd_ag2dmc5r/4 --split-files --gzip SRR6078290
+2021-08-25 23:09:04,965 - CMD: fastq-dump -N 27581556 -X 33097871 -O /tmp/pfd_ag2dmc5r/5 --split-files --gzip SRR6078290
+Read 5516316 spots for SRR6078290
+Written 5516316 spots for SRR6078290
+Read 5516311 spots for SRR6078290
+Written 5516311 spots for SRR6078290
+Read 5516311 spots for SRR6078290
+Written 5516311 spots for SRR6078290
+Read 5516311 spots for SRR6078290
+Written 5516311 spots for SRR6078290
+Read 5516311 spots for SRR6078290
+Written 5516311 spots for SRR6078290
+Read 5516311 spots for SRR6078290
+Written 5516311 spots for SRR6078290
+Started analysis of SRR6078290_1.fastq.gz
+Started analysis of SRR6078290_2.fastq.gz
+Approx 5% complete for SRR6078290_1.fastq.gz
+Approx 5% complete for SRR6078290_2.fastq.gz
+Approx 10% complete for SRR6078290_1.fastq.gz
+Approx 15% complete for SRR6078290_1.fastq.gz
+Approx 10% complete for SRR6078290_2.fastq.gz
+Approx 20% complete for SRR6078290_1.fastq.gz
+Approx 15% complete for SRR6078290_2.fastq.gz
+Approx 25% complete for SRR6078290_1.fastq.gz
+Approx 30% complete for SRR6078290_1.fastq.gz
+Approx 20% complete for SRR6078290_2.fastq.gz
+Approx 35% complete for SRR6078290_1.fastq.gz
+Approx 40% complete for SRR6078290_1.fastq.gz
+Approx 25% complete for SRR6078290_2.fastq.gz
+Approx 45% complete for SRR6078290_1.fastq.gz
+Approx 30% complete for SRR6078290_2.fastq.gz
+Approx 50% complete for SRR6078290_1.fastq.gz
+Approx 35% complete for SRR6078290_2.fastq.gz
+Approx 55% complete for SRR6078290_1.fastq.gz
+Approx 60% complete for SRR6078290_1.fastq.gz
+Approx 40% complete for SRR6078290_2.fastq.gz
+Approx 65% complete for SRR6078290_1.fastq.gz
+Approx 70% complete for SRR6078290_1.fastq.gz
+Approx 45% complete for SRR6078290_2.fastq.gz
+Approx 75% complete for SRR6078290_1.fastq.gz
+Approx 50% complete for SRR6078290_2.fastq.gz
+Approx 80% complete for SRR6078290_1.fastq.gz
+Approx 85% complete for SRR6078290_1.fastq.gz
+Approx 55% complete for SRR6078290_2.fastq.gz
+Approx 90% complete for SRR6078290_1.fastq.gz
+Approx 60% complete for SRR6078290_2.fastq.gz
+Approx 95% complete for SRR6078290_1.fastq.gz
+Approx 65% complete for SRR6078290_2.fastq.gz
+Approx 70% complete for SRR6078290_2.fastq.gz
+Analysis complete for SRR6078290_1.fastq.gz
+Approx 75% complete for SRR6078290_2.fastq.gz
+Approx 80% complete for SRR6078290_2.fastq.gz
+Approx 85% complete for SRR6078290_2.fastq.gz
+Approx 90% complete for SRR6078290_2.fastq.gz
+Approx 95% complete for SRR6078290_2.fastq.gz
+Analysis complete for SRR6078290_2.fastq.gz
+TrimmomaticPE: Started with arguments:
+ -threads 6 -phred33 raw_reads/SRR6078290_1.fastq.gz raw_reads/SRR6078290_2.fastq.gz trimmed_reads/SRR6078290_1.tp.fastq.gz trimmed_reads/SRR6078290_1.tu.fastq.gz trimmed_reads/SRR6078290_2.tp.fastq.gz trimmed_reads/SRR6078290_2.tu.fastq.gz SLIDINGWINDOW:4:20 ILLUMINACLIP:trimmed_reads/adapters_NexteraPE-PE.fasta:2:30:10
+Using Long Clipping Sequence: 'AGATGTGTATAAGAGACAG>PrefixNX/2AGATGTGTATAAGAGACAG>Trans1TCGTCGGCAGCGTCAGATGTGTATAAGAGACAG>Trans1_rcCTGTCTCTTATACACATCTGACGCTGCCGACGA>Trans2GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAG>Trans2_rcCTGTCTCTTATACACATCTCCGAGCCCACGAGAC'
+ILLUMINACLIP: Using 0 prefix pairs, 0 forward/reverse sequences, 1 forward only sequences, 0 reverse only sequences
+Input Read Pairs: 33097871 Both Surviving: 32402520 (97.90%) Forward Only Surviving: 485619 (1.47%) Reverse Only Surviving: 195170 (0.59%) Dropped: 14562 (0.04%)
+TrimmomaticPE: Completed successfully
+Started analysis of SRR6078290_1.tp.fastq.gz
+Started analysis of SRR6078290_2.tp.fastq.gz
+Approx 5% complete for SRR6078290_1.tp.fastq.gz
+Approx 5% complete for SRR6078290_2.tp.fastq.gz
+Approx 10% complete for SRR6078290_1.tp.fastq.gz
+Approx 10% complete for SRR6078290_2.tp.fastq.gz
+Approx 15% complete for SRR6078290_2.tp.fastq.gz
+Approx 15% complete for SRR6078290_1.tp.fastq.gz
+Approx 20% complete for SRR6078290_2.tp.fastq.gz
+Approx 20% complete for SRR6078290_1.tp.fastq.gz
+Approx 25% complete for SRR6078290_2.tp.fastq.gz
+Approx 30% complete for SRR6078290_2.tp.fastq.gz
+Approx 25% complete for SRR6078290_1.tp.fastq.gz
+Approx 35% complete for SRR6078290_2.tp.fastq.gz
+Approx 40% complete for SRR6078290_2.tp.fastq.gz
+Approx 30% complete for SRR6078290_1.tp.fastq.gz
+Approx 45% complete for SRR6078290_2.tp.fastq.gz
+Approx 35% complete for SRR6078290_1.tp.fastq.gz
+Approx 50% complete for SRR6078290_2.tp.fastq.gz
+Approx 40% complete for SRR6078290_1.tp.fastq.gz
+Approx 55% complete for SRR6078290_2.tp.fastq.gz
+Approx 45% complete for SRR6078290_1.tp.fastq.gz
+Approx 60% complete for SRR6078290_2.tp.fastq.gz
+Approx 50% complete for SRR6078290_1.tp.fastq.gz
+Approx 55% complete for SRR6078290_1.tp.fastq.gz
+Approx 65% complete for SRR6078290_2.tp.fastq.gz
+Approx 60% complete for SRR6078290_1.tp.fastq.gz
+Approx 70% complete for SRR6078290_2.tp.fastq.gz
+Approx 65% complete for SRR6078290_1.tp.fastq.gz
+Approx 70% complete for SRR6078290_1.tp.fastq.gz
+Approx 75% complete for SRR6078290_2.tp.fastq.gz
+Approx 75% complete for SRR6078290_1.tp.fastq.gz
+Approx 80% complete for SRR6078290_1.tp.fastq.gz
+Approx 80% complete for SRR6078290_2.tp.fastq.gz
+Approx 85% complete for SRR6078290_1.tp.fastq.gz
+Approx 85% complete for SRR6078290_2.tp.fastq.gz
+Approx 90% complete for SRR6078290_1.tp.fastq.gz
+Approx 95% complete for SRR6078290_1.tp.fastq.gz
+Approx 90% complete for SRR6078290_2.tp.fastq.gz
+Analysis complete for SRR6078290_1.tp.fastq.gz
+Approx 95% complete for SRR6078290_2.tp.fastq.gz
+Analysis complete for SRR6078290_2.tp.fastq.gz
+
+        ==========     _____ _    _ ____  _____  ______          _____  
+        =====         / ____| |  | |  _ \|  __ \|  ____|   /\   |  __ \ 
+          =====      | (___ | |  | | |_) | |__) | |__     /  \  | |  | |
+            ====      \___ \| |  | |  _ <|  _  /|  __|   / /\ \ | |  | |
+              ====    ____) | |__| | |_) | | \ \| |____ / ____ \| |__| |
+        ==========   |_____/ \____/|____/|_|  \_\______/_/    \_\_____/
+	  v2.0.1
+
+//================================= setting ==================================\\
+||                                                                            ||
+|| Function      : Read alignment (RNA-Seq)                                   ||
+|| Input file 1  : SRR6078290_1.tp.fastq.gz                                   ||
+|| Input file 2  : SRR6078290_2.tp.fastq.gz                                   ||
+|| Output file   : SRR6078290.bam (BAM)                                       ||
+|| Index name    : GRCh38.fa.Subread_index                                    ||
+||                                                                            ||
+||                    ------------------------------------                    ||
+||                                                                            ||
+||                               Threads : 6                                  ||
+||                          Phred offset : 33                                 ||
+||               # of extracted subreads : 10                                 ||
+||                        Min read1 vote : 3                                  ||
+||                        Min read2 vote : 1                                  ||
+||                     Max fragment size : 600                                ||
+||                     Min fragment size : 50                                 ||
+||                        Max mismatches : 3                                  ||
+||                      Max indel length : 5                                  ||
+||            Report multi-mapping reads : no                                 ||
+|| Max alignments per multi-mapping read : 1                                  ||
+||                                                                            ||
+\\============================================================================//
+
+//================ Running (25-Aug-2021 23:53:33, pid=112550) ================\\
+||                                                                            ||
+|| Check the input reads.                                                     ||
+|| The input file contains base space reads.                                  ||
+|| Initialise the memory objects.                                             ||
+|| Estimate the mean read length.                                             ||
+|| The range of Phred scores observed in the data is [2,41]                   ||
+|| Create the output BAM file.                                                ||
+|| Check the index.                                                           ||
+|| Init the voting space.                                                     ||
+|| Global environment is initialised.                                         ||
+|| Load the 1-th index block...                                               ||
+|| The index block has been loaded.                                           ||
+|| Start read mapping in chunk.                                               ||
+||    0% completed, 0.2 mins elapsed, rate=21.9k fragments per second         ||
+||    6% completed, 2.4 mins elapsed, rate=17.0k fragments per second         ||
+||   Estimated fragment length : 174 bp                                       ||
+||    7% completed, 2.8 mins elapsed, rate=14.6k fragments per second         ||
+||    8% completed, 3.0 mins elapsed, rate=14.3k fragments per second         ||
+||    8% completed, 3.2 mins elapsed, rate=14.0k fragments per second         ||
+||    8% completed, 3.4 mins elapsed, rate=13.7k fragments per second         ||
+||    8% completed, 3.5 mins elapsed, rate=13.5k fragments per second         ||
+||    9% completed, 3.7 mins elapsed, rate=13.4k fragments per second         ||
+||    9% completed, 4.0 mins elapsed, rate=13.1k fragments per second         ||
+||   10% completed, 4.1 mins elapsed, rate=13.0k fragments per second         ||
+||   10% completed, 4.4 mins elapsed, rate=12.8k fragments per second         ||
+||   10% completed, 4.6 mins elapsed, rate=12.7k fragments per second         ||
+|| Start read mapping in chunk.                                               ||
+||   11% completed, 4.6 mins elapsed, rate=13.2k fragments per second         ||
+||   18% completed, 6.9 mins elapsed, rate=14.4k fragments per second         ||
+||   18% completed, 7.3 mins elapsed, rate=13.4k fragments per second         ||
+||   19% completed, 7.6 mins elapsed, rate=13.3k fragments per second         ||
+||   19% completed, 7.9 mins elapsed, rate=13.1k fragments per second         ||
+||   19% completed, 8.1 mins elapsed, rate=12.9k fragments per second         ||
+||   20% completed, 8.3 mins elapsed, rate=12.8k fragments per second         ||
+||   20% completed, 8.6 mins elapsed, rate=12.6k fragments per second         ||
+||   20% completed, 8.8 mins elapsed, rate=12.5k fragments per second         ||
+||   21% completed, 9.0 mins elapsed, rate=12.4k fragments per second         ||
+||   21% completed, 9.3 mins elapsed, rate=12.2k fragments per second         ||
+||   21% completed, 9.6 mins elapsed, rate=12.1k fragments per second         ||
+|| Start read mapping in chunk.                                               ||
+||   22% completed, 9.7 mins elapsed, rate=12.3k fragments per second         ||
+||   28% completed,  11 mins elapsed, rate=13.1k fragments per second         ||
+||   29% completed,  12 mins elapsed, rate=12.6k fragments per second         ||
+||   30% completed,  12 mins elapsed, rate=12.5k fragments per second         ||
+||   30% completed,  13 mins elapsed, rate=12.3k fragments per second         ||
+||   30% completed,  13 mins elapsed, rate=12.2k fragments per second         ||
+||   31% completed,  13 mins elapsed, rate=12.1k fragments per second         ||
+||   31% completed,  13 mins elapsed, rate=12.0k fragments per second         ||
+||   31% completed,  14 mins elapsed, rate=11.9k fragments per second         ||
+||   32% completed,  14 mins elapsed, rate=11.8k fragments per second         ||
+||   32% completed,  14 mins elapsed, rate=11.7k fragments per second         ||
+||   32% completed,  14 mins elapsed, rate=11.6k fragments per second         ||
+||   33% completed,  15 mins elapsed, rate=11.5k fragments per second         ||
+|| Start read mapping in chunk.                                               ||
+||   33% completed,  15 mins elapsed, rate=11.6k fragments per second         ||
+||   40% completed,  17 mins elapsed, rate=12.3k fragments per second         ||
+||   40% completed,  17 mins elapsed, rate=12.0k fragments per second         ||
+||   41% completed,  18 mins elapsed, rate=11.9k fragments per second         ||
+||   41% completed,  18 mins elapsed, rate=11.8k fragments per second         ||
+||   41% completed,  18 mins elapsed, rate=11.7k fragments per second         ||
+||   42% completed,  19 mins elapsed, rate=11.6k fragments per second         ||
+||   42% completed,  19 mins elapsed, rate=11.4k fragments per second         ||
+||   43% completed,  20 mins elapsed, rate=11.3k fragments per second         ||
+||   43% completed,  20 mins elapsed, rate=11.2k fragments per second         ||
+||   43% completed,  20 mins elapsed, rate=11.1k fragments per second         ||
+|| Start read mapping in chunk.                                               ||
+||   44% completed,  21 mins elapsed, rate=11.1k fragments per second         ||
+||   51% completed,  23 mins elapsed, rate=11.7k fragments per second         ||
+||   52% completed,  23 mins elapsed, rate=11.4k fragments per second         ||
+||   52% completed,  24 mins elapsed, rate=11.3k fragments per second         ||
+||   52% completed,  24 mins elapsed, rate=11.3k fragments per second         ||
+||   53% completed,  24 mins elapsed, rate=11.2k fragments per second         ||
+||   53% completed,  25 mins elapsed, rate=11.1k fragments per second         ||
+||   53% completed,  25 mins elapsed, rate=11.1k fragments per second         ||
+||   54% completed,  25 mins elapsed, rate=11.0k fragments per second         ||
+||   54% completed,  26 mins elapsed, rate=10.9k fragments per second         ||
+||   55% completed,  26 mins elapsed, rate=10.8k fragments per second         ||
+||   55% completed,  27 mins elapsed, rate=10.7k fragments per second         ||
+|| Start read mapping in chunk.                                               ||
+||   55% completed,  27 mins elapsed, rate=10.8k fragments per second         ||
+||   62% completed,  29 mins elapsed, rate=11.3k fragments per second         ||
+||   63% completed,  30 mins elapsed, rate=11.1k fragments per second         ||
+||   63% completed,  30 mins elapsed, rate=11.0k fragments per second         ||
+||   64% completed,  30 mins elapsed, rate=10.9k fragments per second         ||
+||   64% completed,  31 mins elapsed, rate=10.9k fragments per second         ||
+||   64% completed,  31 mins elapsed, rate=10.8k fragments per second         ||
+||   64% completed,  31 mins elapsed, rate=10.8k fragments per second         ||
+||   65% completed,  32 mins elapsed, rate=10.7k fragments per second         ||
+||   65% completed,  32 mins elapsed, rate=10.6k fragments per second         ||
+||   65% completed,  32 mins elapsed, rate=10.6k fragments per second         ||
+||   66% completed,  33 mins elapsed, rate=10.5k fragments per second         ||
+|| Start read mapping in chunk.                                               ||
+||   66% completed,  33 mins elapsed, rate=10.5k fragments per second         ||
+||   72% completed,  35 mins elapsed, rate=11.0k fragments per second         ||
+||   74% completed,  36 mins elapsed, rate=11.0k fragments per second         ||
+||   74% completed,  36 mins elapsed, rate=10.9k fragments per second         ||
+||   75% completed,  36 mins elapsed, rate=10.9k fragments per second         ||
+||   75% completed,  37 mins elapsed, rate=10.8k fragments per second         ||
+||   75% completed,  37 mins elapsed, rate=10.8k fragments per second         ||
+||   75% completed,  37 mins elapsed, rate=10.7k fragments per second         ||
+||   76% completed,  38 mins elapsed, rate=10.7k fragments per second         ||
+||   76% completed,  38 mins elapsed, rate=10.6k fragments per second         ||
+||   76% completed,  38 mins elapsed, rate=10.6k fragments per second         ||
+|| Start read mapping in chunk.                                               ||
+||   76% completed,  39 mins elapsed, rate=10.5k fragments per second         ||
+||   82% completed,  41 mins elapsed, rate=10.9k fragments per second         ||
+||   83% completed,  41 mins elapsed, rate=10.9k fragments per second         ||
+||   83% completed,  42 mins elapsed, rate=10.8k fragments per second         ||
+||   84% completed,  42 mins elapsed, rate=10.8k fragments per second         ||
+||   84% completed,  42 mins elapsed, rate=10.8k fragments per second         ||
+||   84% completed,  42 mins elapsed, rate=10.7k fragments per second         ||
+||   85% completed,  43 mins elapsed, rate=10.7k fragments per second         ||
+||   85% completed,  43 mins elapsed, rate=10.6k fragments per second         ||
+||   85% completed,  43 mins elapsed, rate=10.6k fragments per second         ||
+||   86% completed,  44 mins elapsed, rate=10.5k fragments per second         ||
+||   86% completed,  44 mins elapsed, rate=10.5k fragments per second         ||
+|| Start read mapping in chunk.                                               ||
+||   85% completed,  44 mins elapsed, rate=10.4k fragments per second         ||
+||   92% completed,  46 mins elapsed, rate=10.7k fragments per second         ||
+||   93% completed,  47 mins elapsed, rate=10.6k fragments per second         ||
+||   93% completed,  48 mins elapsed, rate=10.5k fragments per second         ||
+||   94% completed,  48 mins elapsed, rate=10.4k fragments per second         ||
+||   94% completed,  49 mins elapsed, rate=10.4k fragments per second         ||
+||   94% completed,  49 mins elapsed, rate=10.3k fragments per second         ||
+||   95% completed,  50 mins elapsed, rate=10.3k fragments per second         ||
+||   95% completed,  50 mins elapsed, rate=10.2k fragments per second         ||
+||   95% completed,  51 mins elapsed, rate=10.2k fragments per second         ||
+||   96% completed,  51 mins elapsed, rate=10.1k fragments per second         ||
+|| Start read mapping in chunk.                                               ||
+||   97% completed,  51 mins elapsed, rate=10.1k fragments per second         ||
+||   99% completed,  52 mins elapsed, rate=10.2k fragments per second         ||
+||   99% completed,  52 mins elapsed, rate=10.2k fragments per second         ||
+||   99% completed,  52 mins elapsed, rate=10.1k fragments per second         ||
+||   99% completed,  53 mins elapsed, rate=10.1k fragments per second         ||
+||   99% completed,  53 mins elapsed, rate=10.1k fragments per second         ||
+||   99% completed,  53 mins elapsed, rate=10.1k fragments per second         ||
+||   99% completed,  53 mins elapsed, rate=10.1k fragments per second         ||
+||   99% completed,  53 mins elapsed, rate=10.1k fragments per second         ||
+||   99% completed,  53 mins elapsed, rate=10.1k fragments per second         ||
+||                                                                            ||
+||                           Completed successfully.                          ||
+||                                                                            ||
+\\====================================    ====================================//
+
+//================================   Summary =================================\\
+||                                                                            ||
+||             Total fragments : 32,402,520                                   ||
+||                      Mapped : 26,841,745 (82.8%)                           ||
+||             Uniquely mapped : 26,841,745                                   ||
+||               Multi-mapping : 0                                            ||
+||                                                                            ||
+||                    Unmapped : 5,560,775                                    ||
+||                                                                            ||
+||             Properly paired : 21,808,809                                   ||
+||         Not properly paired : 5,032,936                                    ||
+||                   Singleton : 1,015,527                                    ||
+||                    Chimeric : 342,867                                      ||
+||       Unexpected strandness : 17,962                                       ||
+||  Unexpected fragment length : 3,588,033                                    ||
+||       Unexpected read order : 68,547                                       ||
+||                                                                            ||
+||                      Indels : 123,661                                      ||
+||                                                                            ||
+||                Running time : 53.7 minutes                                 ||
+||                                                                            ||
+\\============================================================================//
+
+mkdir: cannot create directory ‘logs’: File exists
+mkdir: cannot create directory ‘trimmed_reads’: File exists
+# Downloading 
+2021-08-26 00:47:17,877 - SRR ids: ['SRR6078291']
+2021-08-26 00:47:17,877 - extra args: ['--split-files', '--gzip']
+2021-08-26 00:47:17,879 - tempdir: /tmp/pfd_u0kbti01
+2021-08-26 00:47:17,879 - CMD: sra-stat --meta --quick SRR6078291
+2021-08-26 00:47:21,303 - SRR6078291 spots: 32657416
+2021-08-26 00:47:21,303 - blocks: [[1, 5442902], [5442903, 10885804], [10885805, 16328706], [16328707, 21771608], [21771609, 27214510], [27214511, 32657416]]
+2021-08-26 00:47:21,303 - CMD: fastq-dump -N 1 -X 5442902 -O /tmp/pfd_u0kbti01/0 --split-files --gzip SRR6078291
+2021-08-26 00:47:21,307 - CMD: fastq-dump -N 5442903 -X 10885804 -O /tmp/pfd_u0kbti01/1 --split-files --gzip SRR6078291
+2021-08-26 00:47:21,308 - CMD: fastq-dump -N 10885805 -X 16328706 -O /tmp/pfd_u0kbti01/2 --split-files --gzip SRR6078291
+2021-08-26 00:47:21,310 - CMD: fastq-dump -N 16328707 -X 21771608 -O /tmp/pfd_u0kbti01/3 --split-files --gzip SRR6078291
+2021-08-26 00:47:21,312 - CMD: fastq-dump -N 21771609 -X 27214510 -O /tmp/pfd_u0kbti01/4 --split-files --gzip SRR6078291
+2021-08-26 00:47:21,314 - CMD: fastq-dump -N 27214511 -X 32657416 -O /tmp/pfd_u0kbti01/5 --split-files --gzip SRR6078291
+Read 5442902 spots for SRR6078291
+Written 5442902 spots for SRR6078291
+Read 5442902 spots for SRR6078291
+Written 5442902 spots for SRR6078291
+Read 5442906 spots for SRR6078291
+Written 5442906 spots for SRR6078291
+Read 5442902 spots for SRR6078291
+Written 5442902 spots for SRR6078291
+Read 5442902 spots for SRR6078291
+Written 5442902 spots for SRR6078291
+Read 5442902 spots for SRR6078291
+Written 5442902 spots for SRR6078291
+Started analysis of SRR6078291_1.fastq.gz
+Started analysis of SRR6078291_2.fastq.gz
+Approx 5% complete for SRR6078291_1.fastq.gz
+Approx 5% complete for SRR6078291_2.fastq.gz
+Approx 10% complete for SRR6078291_1.fastq.gz
+Approx 10% complete for SRR6078291_2.fastq.gz
+Approx 15% complete for SRR6078291_1.fastq.gz
+Approx 15% complete for SRR6078291_2.fastq.gz
+Approx 20% complete for SRR6078291_1.fastq.gz
+Approx 20% complete for SRR6078291_2.fastq.gz
+Approx 25% complete for SRR6078291_2.fastq.gz
+Approx 25% complete for SRR6078291_1.fastq.gz
+Approx 30% complete for SRR6078291_1.fastq.gz
+Approx 30% complete for SRR6078291_2.fastq.gz
+Approx 35% complete for SRR6078291_1.fastq.gz
+Approx 35% complete for SRR6078291_2.fastq.gz
+Approx 40% complete for SRR6078291_1.fastq.gz
+Approx 45% complete for SRR6078291_1.fastq.gz
+Approx 40% complete for SRR6078291_2.fastq.gz
+Approx 50% complete for SRR6078291_1.fastq.gz
+Approx 45% complete for SRR6078291_2.fastq.gz
+Approx 55% complete for SRR6078291_1.fastq.gz
+Approx 50% complete for SRR6078291_2.fastq.gz
+Approx 55% complete for SRR6078291_2.fastq.gz
+Approx 60% complete for SRR6078291_1.fastq.gz
+Approx 65% complete for SRR6078291_1.fastq.gz
+Approx 60% complete for SRR6078291_2.fastq.gz
+Approx 65% complete for SRR6078291_2.fastq.gz
+Approx 70% complete for SRR6078291_1.fastq.gz
+Approx 70% complete for SRR6078291_2.fastq.gz
+Approx 75% complete for SRR6078291_1.fastq.gz
+Approx 75% complete for SRR6078291_2.fastq.gz
+Approx 80% complete for SRR6078291_1.fastq.gz
+Approx 80% complete for SRR6078291_2.fastq.gz
+Approx 85% complete for SRR6078291_1.fastq.gz
+Approx 85% complete for SRR6078291_2.fastq.gz
+Approx 90% complete for SRR6078291_1.fastq.gz
+Approx 95% complete for SRR6078291_1.fastq.gz
+Approx 90% complete for SRR6078291_2.fastq.gz
+Analysis complete for SRR6078291_1.fastq.gz
+Approx 95% complete for SRR6078291_2.fastq.gz
+Analysis complete for SRR6078291_2.fastq.gz
+TrimmomaticPE: Started with arguments:
+ -threads 6 -phred33 raw_reads/SRR6078291_1.fastq.gz raw_reads/SRR6078291_2.fastq.gz trimmed_reads/SRR6078291_1.tp.fastq.gz trimmed_reads/SRR6078291_1.tu.fastq.gz trimmed_reads/SRR6078291_2.tp.fastq.gz trimmed_reads/SRR6078291_2.tu.fastq.gz SLIDINGWINDOW:4:20 ILLUMINACLIP:trimmed_reads/adapters_NexteraPE-PE.fasta:2:30:10
+Using Long Clipping Sequence: 'AGATGTGTATAAGAGACAG>PrefixNX/2AGATGTGTATAAGAGACAG>Trans1TCGTCGGCAGCGTCAGATGTGTATAAGAGACAG>Trans1_rcCTGTCTCTTATACACATCTGACGCTGCCGACGA>Trans2GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAG>Trans2_rcCTGTCTCTTATACACATCTCCGAGCCCACGAGAC'
+ILLUMINACLIP: Using 0 prefix pairs, 0 forward/reverse sequences, 1 forward only sequences, 0 reverse only sequences
+Input Read Pairs: 32657416 Both Surviving: 32088414 (98.26%) Forward Only Surviving: 398747 (1.22%) Reverse Only Surviving: 159219 (0.49%) Dropped: 11036 (0.03%)
+TrimmomaticPE: Completed successfully
+Started analysis of SRR6078291_1.tp.fastq.gz
+Started analysis of SRR6078291_2.tp.fastq.gz
+Approx 5% complete for SRR6078291_1.tp.fastq.gz
+Approx 5% complete for SRR6078291_2.tp.fastq.gz
+Approx 10% complete for SRR6078291_2.tp.fastq.gz
+Approx 10% complete for SRR6078291_1.tp.fastq.gz
+Approx 15% complete for SRR6078291_2.tp.fastq.gz
+Approx 20% complete for SRR6078291_2.tp.fastq.gz
+Approx 15% complete for SRR6078291_1.tp.fastq.gz
+Approx 25% complete for SRR6078291_2.tp.fastq.gz
+Approx 30% complete for SRR6078291_2.tp.fastq.gz
+Approx 20% complete for SRR6078291_1.tp.fastq.gz
+Approx 35% complete for SRR6078291_2.tp.fastq.gz
+Approx 25% complete for SRR6078291_1.tp.fastq.gz
+Approx 40% complete for SRR6078291_2.tp.fastq.gz
+Approx 30% complete for SRR6078291_1.tp.fastq.gz
+Approx 45% complete for SRR6078291_2.tp.fastq.gz
+Approx 35% complete for SRR6078291_1.tp.fastq.gz
+Approx 50% complete for SRR6078291_2.tp.fastq.gz
+Approx 40% complete for SRR6078291_1.tp.fastq.gz
+Approx 55% complete for SRR6078291_2.tp.fastq.gz
+Approx 45% complete for SRR6078291_1.tp.fastq.gz
+Approx 60% complete for SRR6078291_2.tp.fastq.gz
+Approx 65% complete for SRR6078291_2.tp.fastq.gz
+Approx 50% complete for SRR6078291_1.tp.fastq.gz
+Approx 70% complete for SRR6078291_2.tp.fastq.gz
+Approx 75% complete for SRR6078291_2.tp.fastq.gz
+Approx 55% complete for SRR6078291_1.tp.fastq.gz
+Approx 60% complete for SRR6078291_1.tp.fastq.gz
+Approx 80% complete for SRR6078291_2.tp.fastq.gz
+Approx 65% complete for SRR6078291_1.tp.fastq.gz
+Approx 85% complete for SRR6078291_2.tp.fastq.gz
+Approx 70% complete for SRR6078291_1.tp.fastq.gz
+Approx 90% complete for SRR6078291_2.tp.fastq.gz
+Approx 95% complete for SRR6078291_2.tp.fastq.gz
+Approx 75% complete for SRR6078291_1.tp.fastq.gz
+Approx 80% complete for SRR6078291_1.tp.fastq.gz
+Analysis complete for SRR6078291_2.tp.fastq.gz
+Approx 85% complete for SRR6078291_1.tp.fastq.gz
+Approx 90% complete for SRR6078291_1.tp.fastq.gz
+Approx 95% complete for SRR6078291_1.tp.fastq.gz
+Analysis complete for SRR6078291_1.tp.fastq.gz
+
+        ==========     _____ _    _ ____  _____  ______          _____  
+        =====         / ____| |  | |  _ \|  __ \|  ____|   /\   |  __ \ 
+          =====      | (___ | |  | | |_) | |__) | |__     /  \  | |  | |
+            ====      \___ \| |  | |  _ <|  _  /|  __|   / /\ \ | |  | |
+              ====    ____) | |__| | |_) | | \ \| |____ / ____ \| |__| |
+        ==========   |_____/ \____/|____/|_|  \_\______/_/    \_\_____/
+	  v2.0.1
+
+//================================= setting ==================================\\
+||                                                                            ||
+|| Function      : Read alignment (RNA-Seq)                                   ||
+|| Input file 1  : SRR6078291_1.tp.fastq.gz                                   ||
+|| Input file 2  : SRR6078291_2.tp.fastq.gz                                   ||
+|| Output file   : SRR6078291.bam (BAM)                                       ||
+|| Index name    : GRCh38.fa.Subread_index                                    ||
+||                                                                            ||
+||                    ------------------------------------                    ||
+||                                                                            ||
+||                               Threads : 6                                  ||
+||                          Phred offset : 33                                 ||
+||               # of extracted subreads : 10                                 ||
+||                        Min read1 vote : 3                                  ||
+||                        Min read2 vote : 1                                  ||
+||                     Max fragment size : 600                                ||
+||                     Min fragment size : 50                                 ||
+||                        Max mismatches : 3                                  ||
+||                      Max indel length : 5                                  ||
+||            Report multi-mapping reads : no                                 ||
+|| Max alignments per multi-mapping read : 1                                  ||
+||                                                                            ||
+\\============================================================================//
+
+//================ Running (26-Aug-2021 01:35:15, pid=117415) ================\\
+||                                                                            ||
+|| Check the input reads.                                                     ||
+|| The input file contains base space reads.                                  ||
+|| Initialise the memory objects.                                             ||
+|| Estimate the mean read length.                                             ||
+|| The range of Phred scores observed in the data is [2,41]                   ||
+|| Create the output BAM file.                                                ||
+|| Check the index.                                                           ||
+|| Init the voting space.                                                     ||
+|| Global environment is initialised.                                         ||
+|| Load the 1-th index block...                                               ||
+|| The index block has been loaded.                                           ||
+|| Start read mapping in chunk.                                               ||
+||    0% completed, 0.2 mins elapsed, rate=23.8k fragments per second         ||
+||    7% completed, 2.3 mins elapsed, rate=18.4k fragments per second         ||
+||   Estimated fragment length : 163 bp                                       ||
+||    7% completed, 2.4 mins elapsed, rate=16.8k fragments per second         ||
+||    8% completed, 2.5 mins elapsed, rate=16.9k fragments per second         ||
+||    8% completed, 2.6 mins elapsed, rate=17.1k fragments per second         ||
+||    8% completed, 2.7 mins elapsed, rate=17.2k fragments per second         ||
+||    9% completed, 2.8 mins elapsed, rate=17.4k fragments per second         ||
+||    9% completed, 2.9 mins elapsed, rate=17.5k fragments per second         ||
+||   10% completed, 3.0 mins elapsed, rate=17.6k fragments per second         ||
+||   10% completed, 3.1 mins elapsed, rate=17.7k fragments per second         ||
+||   10% completed, 3.2 mins elapsed, rate=17.8k fragments per second         ||
+|| Start read mapping in chunk.                                               ||
+||   11% completed, 3.3 mins elapsed, rate=18.7k fragments per second         ||
+||   17% completed, 5.2 mins elapsed, rate=18.5k fragments per second         ||
+||   18% completed, 5.6 mins elapsed, rate=17.6k fragments per second         ||
+||   18% completed, 5.7 mins elapsed, rate=17.6k fragments per second         ||
+||   19% completed, 5.8 mins elapsed, rate=17.6k fragments per second         ||
+||   19% completed, 5.9 mins elapsed, rate=17.6k fragments per second         ||
+||   19% completed, 6.0 mins elapsed, rate=17.6k fragments per second         ||
+||   20% completed, 6.1 mins elapsed, rate=17.6k fragments per second         ||
+||   20% completed, 6.2 mins elapsed, rate=17.6k fragments per second         ||
+||   20% completed, 6.3 mins elapsed, rate=17.6k fragments per second         ||
+||   21% completed, 6.5 mins elapsed, rate=17.5k fragments per second         ||
+||   21% completed, 6.6 mins elapsed, rate=17.5k fragments per second         ||
+|| Start read mapping in chunk.                                               ||
+||   22% completed, 6.7 mins elapsed, rate=18.0k fragments per second         ||
+||   28% completed, 8.6 mins elapsed, rate=17.9k fragments per second         ||
+||   29% completed, 9.0 mins elapsed, rate=17.4k fragments per second         ||
+||   29% completed, 9.2 mins elapsed, rate=17.4k fragments per second         ||
+||   30% completed, 9.3 mins elapsed, rate=17.3k fragments per second         ||
+||   30% completed, 9.4 mins elapsed, rate=17.3k fragments per second         ||
+||   30% completed, 9.5 mins elapsed, rate=17.3k fragments per second         ||
+||   31% completed, 9.6 mins elapsed, rate=17.3k fragments per second         ||
+||   31% completed, 9.7 mins elapsed, rate=17.2k fragments per second         ||
+||   31% completed, 9.8 mins elapsed, rate=17.2k fragments per second         ||
+||   32% completed,   9 mins elapsed, rate=17.2k fragments per second         ||
+||   32% completed,  10 mins elapsed, rate=17.2k fragments per second         ||
+|| Start read mapping in chunk.                                               ||
+||   32% completed,  10 mins elapsed, rate=17.4k fragments per second         ||
+||   38% completed,  12 mins elapsed, rate=17.5k fragments per second         ||
+||   40% completed,  12 mins elapsed, rate=17.2k fragments per second         ||
+||   40% completed,  12 mins elapsed, rate=17.1k fragments per second         ||
+||   41% completed,  12 mins elapsed, rate=17.1k fragments per second         ||
+||   41% completed,  13 mins elapsed, rate=17.1k fragments per second         ||
+||   41% completed,  13 mins elapsed, rate=17.0k fragments per second         ||
+||   42% completed,  13 mins elapsed, rate=17.0k fragments per second         ||
+||   42% completed,  13 mins elapsed, rate=17.0k fragments per second         ||
+||   43% completed,  13 mins elapsed, rate=16.9k fragments per second         ||
+||   43% completed,  13 mins elapsed, rate=16.9k fragments per second         ||
+|| Start read mapping in chunk.                                               ||
+||   43% completed,  13 mins elapsed, rate=17.1k fragments per second         ||
+||   51% completed,  16 mins elapsed, rate=16.9k fragments per second         ||
+||   51% completed,  16 mins elapsed, rate=16.9k fragments per second         ||
+||   52% completed,  16 mins elapsed, rate=16.8k fragments per second         ||
+||   52% completed,  16 mins elapsed, rate=16.8k fragments per second         ||
+||   52% completed,  16 mins elapsed, rate=16.8k fragments per second         ||
+||   53% completed,  16 mins elapsed, rate=16.7k fragments per second         ||
+||   53% completed,  17 mins elapsed, rate=16.7k fragments per second         ||
+||   53% completed,  17 mins elapsed, rate=16.7k fragments per second         ||
+||   54% completed,  17 mins elapsed, rate=16.7k fragments per second         ||
+|| Start read mapping in chunk.                                               ||
+||   54% completed,  17 mins elapsed, rate=16.8k fragments per second         ||
+||   61% completed,  19 mins elapsed, rate=17.0k fragments per second         ||
+||   62% completed,  19 mins elapsed, rate=16.7k fragments per second         ||
+||   62% completed,  19 mins elapsed, rate=16.7k fragments per second         ||
+||   62% completed,  20 mins elapsed, rate=16.7k fragments per second         ||
+||   63% completed,  20 mins elapsed, rate=16.6k fragments per second         ||
+||   63% completed,  20 mins elapsed, rate=16.6k fragments per second         ||
+||   63% completed,  20 mins elapsed, rate=16.6k fragments per second         ||
+||   64% completed,  20 mins elapsed, rate=16.6k fragments per second         ||
+||   64% completed,  20 mins elapsed, rate=16.5k fragments per second         ||
+||   64% completed,  20 mins elapsed, rate=16.5k fragments per second         ||
+||   65% completed,  21 mins elapsed, rate=16.5k fragments per second         ||
+||   65% completed,  21 mins elapsed, rate=16.5k fragments per second         ||
+|| Start read mapping in chunk.                                               ||
+||   65% completed,  21 mins elapsed, rate=16.6k fragments per second         ||
+||   71% completed,  23 mins elapsed, rate=16.8k fragments per second         ||
+||   73% completed,  23 mins elapsed, rate=16.6k fragments per second         ||
+||   73% completed,  23 mins elapsed, rate=16.6k fragments per second         ||
+||   73% completed,  23 mins elapsed, rate=16.5k fragments per second         ||
+||   74% completed,  24 mins elapsed, rate=16.5k fragments per second         ||
+||   74% completed,  24 mins elapsed, rate=16.5k fragments per second         ||
+||   74% completed,  24 mins elapsed, rate=16.4k fragments per second         ||
+||   75% completed,  24 mins elapsed, rate=16.4k fragments per second         ||
+||   75% completed,  24 mins elapsed, rate=16.4k fragments per second         ||
+||   75% completed,  24 mins elapsed, rate=16.4k fragments per second         ||
+||   76% completed,  24 mins elapsed, rate=16.3k fragments per second         ||
+|| Start read mapping in chunk.                                               ||
+||   76% completed,  25 mins elapsed, rate=16.4k fragments per second         ||
+||   82% completed,  26 mins elapsed, rate=16.5k fragments per second         ||
+||   83% completed,  27 mins elapsed, rate=16.4k fragments per second         ||
+||   84% completed,  27 mins elapsed, rate=16.3k fragments per second         ||
+||   84% completed,  27 mins elapsed, rate=16.3k fragments per second         ||
+||   85% completed,  27 mins elapsed, rate=16.3k fragments per second         ||
+||   85% completed,  28 mins elapsed, rate=16.2k fragments per second         ||
+||   85% completed,  28 mins elapsed, rate=16.2k fragments per second         ||
+||   86% completed,  28 mins elapsed, rate=16.2k fragments per second         ||
+||   86% completed,  28 mins elapsed, rate=16.2k fragments per second         ||
+||   86% completed,  28 mins elapsed, rate=16.1k fragments per second         ||
+||   87% completed,  28 mins elapsed, rate=16.1k fragments per second         ||
+|| Start read mapping in chunk.                                               ||
+||   87% completed,  28 mins elapsed, rate=16.2k fragments per second         ||
+||   93% completed,  30 mins elapsed, rate=16.4k fragments per second         ||
+||   94% completed,  31 mins elapsed, rate=16.2k fragments per second         ||
+||   95% completed,  31 mins elapsed, rate=16.2k fragments per second         ||
+||   95% completed,  31 mins elapsed, rate=16.1k fragments per second         ||
+||   95% completed,  31 mins elapsed, rate=16.1k fragments per second         ||
+||   96% completed,  32 mins elapsed, rate=16.1k fragments per second         ||
+||   96% completed,  32 mins elapsed, rate=16.0k fragments per second         ||
+||   97% completed,  32 mins elapsed, rate=16.0k fragments per second         ||
+||   97% completed,  32 mins elapsed, rate=16.0k fragments per second         ||
+||   97% completed,  32 mins elapsed, rate=16.0k fragments per second         ||
+|| Start read mapping in chunk.                                               ||
+||   98% completed,  32 mins elapsed, rate=16.0k fragments per second         ||
+||   99% completed,  33 mins elapsed, rate=16.0k fragments per second         ||
+||   99% completed,  33 mins elapsed, rate=16.0k fragments per second         ||
+||   99% completed,  33 mins elapsed, rate=16.0k fragments per second         ||
+||   99% completed,  33 mins elapsed, rate=16.0k fragments per second         ||
+||   99% completed,  33 mins elapsed, rate=16.0k fragments per second         ||
+||   99% completed,  33 mins elapsed, rate=16.0k fragments per second         ||
+||   99% completed,  33 mins elapsed, rate=15.9k fragments per second         ||
+||   99% completed,  33 mins elapsed, rate=15.9k fragments per second         ||
+||   99% completed,  33 mins elapsed, rate=15.9k fragments per second         ||
+||   99% completed,  33 mins elapsed, rate=15.9k fragments per second         ||
+||                                                                            ||
+||                           Completed successfully.                          ||
+||                                                                            ||
+\\====================================    ====================================//
+
+//================================   Summary =================================\\
+||                                                                            ||
+||             Total fragments : 32,088,414                                   ||
+||                      Mapped : 28,480,541 (88.8%)                           ||
+||             Uniquely mapped : 28,480,541                                   ||
+||               Multi-mapping : 0                                            ||
+||                                                                            ||
+||                    Unmapped : 3,607,873                                    ||
+||                                                                            ||
+||             Properly paired : 23,140,513                                   ||
+||         Not properly paired : 5,340,028                                    ||
+||                   Singleton : 1,023,337                                    ||
+||                    Chimeric : 249,552                                      ||
+||       Unexpected strandness : 13,989                                       ||
+||  Unexpected fragment length : 3,689,539                                    ||
+||       Unexpected read order : 363,611                                      ||
+||                                                                            ||
+||                      Indels : 154,639                                      ||
+||                                                                            ||
+||                Running time : 33.6 minutes                                 ||
+||                                                                            ||
+\\============================================================================//
+
+mkdir: cannot create directory ‘logs’: File exists
+mkdir: cannot create directory ‘trimmed_reads’: File exists
+# Downloading 
+2021-08-26 02:08:50,888 - SRR ids: ['SRR6078292']
+2021-08-26 02:08:50,888 - extra args: ['--split-files', '--gzip']
+2021-08-26 02:08:50,890 - tempdir: /tmp/pfd_r1scpq2_
+2021-08-26 02:08:50,890 - CMD: sra-stat --meta --quick SRR6078292
+2021-08-26 02:08:54,301 - SRR6078292 spots: 34701800
+2021-08-26 02:08:54,301 - blocks: [[1, 5783633], [5783634, 11567266], [11567267, 17350899], [17350900, 23134532], [23134533, 28918165], [28918166, 34701800]]
+2021-08-26 02:08:54,302 - CMD: fastq-dump -N 1 -X 5783633 -O /tmp/pfd_r1scpq2_/0 --split-files --gzip SRR6078292
+2021-08-26 02:08:54,306 - CMD: fastq-dump -N 5783634 -X 11567266 -O /tmp/pfd_r1scpq2_/1 --split-files --gzip SRR6078292
+2021-08-26 02:08:54,308 - CMD: fastq-dump -N 11567267 -X 17350899 -O /tmp/pfd_r1scpq2_/2 --split-files --gzip SRR6078292
+2021-08-26 02:08:54,310 - CMD: fastq-dump -N 17350900 -X 23134532 -O /tmp/pfd_r1scpq2_/3 --split-files --gzip SRR6078292
+2021-08-26 02:08:54,312 - CMD: fastq-dump -N 23134533 -X 28918165 -O /tmp/pfd_r1scpq2_/4 --split-files --gzip SRR6078292
+2021-08-26 02:08:54,314 - CMD: fastq-dump -N 28918166 -X 34701800 -O /tmp/pfd_r1scpq2_/5 --split-files --gzip SRR6078292
+Read 5783633 spots for SRR6078292
+Written 5783633 spots for SRR6078292
+Read 5783635 spots for SRR6078292
+Written 5783635 spots for SRR6078292
+Read 5783633 spots for SRR6078292
+Written 5783633 spots for SRR6078292
+Read 5783633 spots for SRR6078292
+Written 5783633 spots for SRR6078292
+Read 5783633 spots for SRR6078292
+Written 5783633 spots for SRR6078292
+Read 5783633 spots for SRR6078292
+Written 5783633 spots for SRR6078292
+Started analysis of SRR6078292_1.fastq.gz
+Started analysis of SRR6078292_2.fastq.gz
+Approx 5% complete for SRR6078292_2.fastq.gz
+Approx 5% complete for SRR6078292_1.fastq.gz
+Approx 10% complete for SRR6078292_2.fastq.gz
+Approx 15% complete for SRR6078292_2.fastq.gz
+Approx 10% complete for SRR6078292_1.fastq.gz
+Approx 15% complete for SRR6078292_1.fastq.gz
+Approx 20% complete for SRR6078292_2.fastq.gz
+Approx 20% complete for SRR6078292_1.fastq.gz
+Approx 25% complete for SRR6078292_2.fastq.gz
+Approx 25% complete for SRR6078292_1.fastq.gz
+Approx 30% complete for SRR6078292_2.fastq.gz
+Approx 30% complete for SRR6078292_1.fastq.gz
+Approx 35% complete for SRR6078292_2.fastq.gz
+Approx 35% complete for SRR6078292_1.fastq.gz
+Approx 40% complete for SRR6078292_2.fastq.gz
+Approx 45% complete for SRR6078292_2.fastq.gz
+Approx 40% complete for SRR6078292_1.fastq.gz
+Approx 50% complete for SRR6078292_2.fastq.gz
+Approx 55% complete for SRR6078292_2.fastq.gz
+Approx 45% complete for SRR6078292_1.fastq.gz
+Approx 60% complete for SRR6078292_2.fastq.gz
+Approx 50% complete for SRR6078292_1.fastq.gz
+Approx 65% complete for SRR6078292_2.fastq.gz
+Approx 55% complete for SRR6078292_1.fastq.gz
+Approx 60% complete for SRR6078292_1.fastq.gz
+Approx 70% complete for SRR6078292_2.fastq.gz
+Approx 65% complete for SRR6078292_1.fastq.gz
+Approx 75% complete for SRR6078292_2.fastq.gz
+Approx 70% complete for SRR6078292_1.fastq.gz
+Approx 80% complete for SRR6078292_2.fastq.gz
+Approx 85% complete for SRR6078292_2.fastq.gz
+Approx 75% complete for SRR6078292_1.fastq.gz
+Approx 90% complete for SRR6078292_2.fastq.gz
+Approx 80% complete for SRR6078292_1.fastq.gz
+Approx 95% complete for SRR6078292_2.fastq.gz
+Analysis complete for SRR6078292_2.fastq.gz
+Approx 85% complete for SRR6078292_1.fastq.gz
+Approx 90% complete for SRR6078292_1.fastq.gz
+Approx 95% complete for SRR6078292_1.fastq.gz
+Analysis complete for SRR6078292_1.fastq.gz
+TrimmomaticPE: Started with arguments:
+ -threads 6 -phred33 raw_reads/SRR6078292_1.fastq.gz raw_reads/SRR6078292_2.fastq.gz trimmed_reads/SRR6078292_1.tp.fastq.gz trimmed_reads/SRR6078292_1.tu.fastq.gz trimmed_reads/SRR6078292_2.tp.fastq.gz trimmed_reads/SRR6078292_2.tu.fastq.gz SLIDINGWINDOW:4:20 ILLUMINACLIP:trimmed_reads/adapters_NexteraPE-PE.fasta:2:30:10
+Using Long Clipping Sequence: 'AGATGTGTATAAGAGACAG>PrefixNX/2AGATGTGTATAAGAGACAG>Trans1TCGTCGGCAGCGTCAGATGTGTATAAGAGACAG>Trans1_rcCTGTCTCTTATACACATCTGACGCTGCCGACGA>Trans2GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAG>Trans2_rcCTGTCTCTTATACACATCTCCGAGCCCACGAGAC'
+ILLUMINACLIP: Using 0 prefix pairs, 0 forward/reverse sequences, 1 forward only sequences, 0 reverse only sequences
+Input Read Pairs: 34701800 Both Surviving: 34148484 (98.41%) Forward Only Surviving: 413146 (1.19%) Reverse Only Surviving: 131211 (0.38%) Dropped: 8959 (0.03%)
+TrimmomaticPE: Completed successfully
+Started analysis of SRR6078292_1.tp.fastq.gz
+Started analysis of SRR6078292_2.tp.fastq.gz
+Approx 5% complete for SRR6078292_1.tp.fastq.gz
+Approx 5% complete for SRR6078292_2.tp.fastq.gz
+Approx 10% complete for SRR6078292_1.tp.fastq.gz
+Approx 15% complete for SRR6078292_1.tp.fastq.gz
+Approx 10% complete for SRR6078292_2.tp.fastq.gz
+Approx 20% complete for SRR6078292_1.tp.fastq.gz
+Approx 25% complete for SRR6078292_1.tp.fastq.gz
+Approx 15% complete for SRR6078292_2.tp.fastq.gz
+Approx 20% complete for SRR6078292_2.tp.fastq.gz
+Approx 30% complete for SRR6078292_1.tp.fastq.gz
+Approx 25% complete for SRR6078292_2.tp.fastq.gz
+Approx 35% complete for SRR6078292_1.tp.fastq.gz
+Approx 30% complete for SRR6078292_2.tp.fastq.gz
+Approx 35% complete for SRR6078292_2.tp.fastq.gz
+Approx 40% complete for SRR6078292_1.tp.fastq.gz
+Approx 40% complete for SRR6078292_2.tp.fastq.gz
+Approx 45% complete for SRR6078292_1.tp.fastq.gz
+Approx 45% complete for SRR6078292_2.tp.fastq.gz
+Approx 50% complete for SRR6078292_1.tp.fastq.gz
+Approx 50% complete for SRR6078292_2.tp.fastq.gz
+Approx 55% complete for SRR6078292_1.tp.fastq.gz
+Approx 55% complete for SRR6078292_2.tp.fastq.gz
+Approx 60% complete for SRR6078292_2.tp.fastq.gz
+Approx 60% complete for SRR6078292_1.tp.fastq.gz
+Approx 65% complete for SRR6078292_2.tp.fastq.gz
+Approx 70% complete for SRR6078292_2.tp.fastq.gz
+Approx 65% complete for SRR6078292_1.tp.fastq.gz
+Approx 75% complete for SRR6078292_2.tp.fastq.gz
+Approx 70% complete for SRR6078292_1.tp.fastq.gz
+Approx 80% complete for SRR6078292_2.tp.fastq.gz
+Approx 85% complete for SRR6078292_2.tp.fastq.gz
+Approx 75% complete for SRR6078292_1.tp.fastq.gz
+Approx 90% complete for SRR6078292_2.tp.fastq.gz
+Approx 80% complete for SRR6078292_1.tp.fastq.gz
+Approx 95% complete for SRR6078292_2.tp.fastq.gz
+Analysis complete for SRR6078292_2.tp.fastq.gz
+Approx 85% complete for SRR6078292_1.tp.fastq.gz
+Approx 90% complete for SRR6078292_1.tp.fastq.gz
+Approx 95% complete for SRR6078292_1.tp.fastq.gz
+Analysis complete for SRR6078292_1.tp.fastq.gz
+
+        ==========     _____ _    _ ____  _____  ______          _____  
+        =====         / ____| |  | |  _ \|  __ \|  ____|   /\   |  __ \ 
+          =====      | (___ | |  | | |_) | |__) | |__     /  \  | |  | |
+            ====      \___ \| |  | |  _ <|  _  /|  __|   / /\ \ | |  | |
+              ====    ____) | |__| | |_) | | \ \| |____ / ____ \| |__| |
+        ==========   |_____/ \____/|____/|_|  \_\______/_/    \_\_____/
+	  v2.0.1
+
+//================================= setting ==================================\\
+||                                                                            ||
+|| Function      : Read alignment (RNA-Seq)                                   ||
+|| Input file 1  : SRR6078292_1.tp.fastq.gz                                   ||
+|| Input file 2  : SRR6078292_2.tp.fastq.gz                                   ||
+|| Output file   : SRR6078292.bam (BAM)                                       ||
+|| Index name    : GRCh38.fa.Subread_index                                    ||
+||                                                                            ||
+||                    ------------------------------------                    ||
+||                                                                            ||
+||                               Threads : 6                                  ||
+||                          Phred offset : 33                                 ||
+||               # of extracted subreads : 10                                 ||
+||                        Min read1 vote : 3                                  ||
+||                        Min read2 vote : 1                                  ||
+||                     Max fragment size : 600                                ||
+||                     Min fragment size : 50                                 ||
+||                        Max mismatches : 3                                  ||
+||                      Max indel length : 5                                  ||
+||            Report multi-mapping reads : no                                 ||
+|| Max alignments per multi-mapping read : 1                                  ||
+||                                                                            ||
+\\============================================================================//
+
+//================ Running (26-Aug-2021 02:56:47, pid=120738) ================\\
+||                                                                            ||
+|| Check the input reads.                                                     ||
+|| The input file contains base space reads.                                  ||
+|| Initialise the memory objects.                                             ||
+|| Estimate the mean read length.                                             ||
+|| The range of Phred scores observed in the data is [2,41]                   ||
+|| Create the output BAM file.                                                ||
+|| Check the index.                                                           ||
+|| Init the voting space.                                                     ||
+|| Global environment is initialised.                                         ||
+|| Load the 1-th index block...                                               ||
+|| The index block has been loaded.                                           ||
+|| Start read mapping in chunk.                                               ||
+||    0% completed, 0.2 mins elapsed, rate=26.1k fragments per second         ||
+||    6% completed, 2.1 mins elapsed, rate=18.6k fragments per second         ||
+||   Estimated fragment length : 161 bp                                       ||
+||    7% completed, 2.4 mins elapsed, rate=17.0k fragments per second         ||
+||    7% completed, 2.5 mins elapsed, rate=17.2k fragments per second         ||
+||    8% completed, 2.6 mins elapsed, rate=17.3k fragments per second         ||
+||    8% completed, 2.7 mins elapsed, rate=17.4k fragments per second         ||
+||    9% completed, 2.8 mins elapsed, rate=17.5k fragments per second         ||
+||    9% completed, 2.9 mins elapsed, rate=17.6k fragments per second         ||
+||    9% completed, 3.0 mins elapsed, rate=17.7k fragments per second         ||
+||    9% completed, 3.0 mins elapsed, rate=17.8k fragments per second         ||
+||   10% completed, 3.1 mins elapsed, rate=17.8k fragments per second         ||
+||   10% completed, 3.2 mins elapsed, rate=17.9k fragments per second         ||
+|| Start read mapping in chunk.                                               ||
+||   10% completed, 3.3 mins elapsed, rate=18.7k fragments per second         ||
+||   17% completed, 5.2 mins elapsed, rate=18.6k fragments per second         ||
+||   18% completed, 5.6 mins elapsed, rate=17.7k fragments per second         ||
+||   18% completed, 5.6 mins elapsed, rate=17.7k fragments per second         ||
+||   18% completed, 5.7 mins elapsed, rate=17.7k fragments per second         ||
+||   19% completed, 5.9 mins elapsed, rate=17.7k fragments per second         ||
+||   19% completed, 6.0 mins elapsed, rate=17.7k fragments per second         ||
+||   20% completed, 6.1 mins elapsed, rate=17.7k fragments per second         ||
+||   20% completed, 6.2 mins elapsed, rate=17.7k fragments per second         ||
+||   20% completed, 6.3 mins elapsed, rate=17.7k fragments per second         ||
+||   21% completed, 6.4 mins elapsed, rate=17.6k fragments per second         ||
+||   21% completed, 6.5 mins elapsed, rate=17.6k fragments per second         ||
+|| Start read mapping in chunk.                                               ||
+||   21% completed, 6.6 mins elapsed, rate=18.1k fragments per second         ||
+||   28% completed, 8.6 mins elapsed, rate=18.0k fragments per second         ||
+||   29% completed, 9.0 mins elapsed, rate=17.5k fragments per second         ||
+||   29% completed, 9.1 mins elapsed, rate=17.4k fragments per second         ||
+||   29% completed, 9.2 mins elapsed, rate=17.4k fragments per second         ||
+||   30% completed, 9.4 mins elapsed, rate=17.3k fragments per second         ||
+||   30% completed, 9.5 mins elapsed, rate=17.3k fragments per second         ||
+||   31% completed, 9.6 mins elapsed, rate=17.2k fragments per second         ||
+||   31% completed, 9.8 mins elapsed, rate=17.2k fragments per second         ||
+||   31% completed,   9 mins elapsed, rate=17.2k fragments per second         ||
+||   32% completed,  10 mins elapsed, rate=17.1k fragments per second         ||
+||   32% completed,  10 mins elapsed, rate=17.1k fragments per second         ||
+|| Start read mapping in chunk.                                               ||
+||   32% completed,  10 mins elapsed, rate=17.3k fragments per second         ||
+||   39% completed,  12 mins elapsed, rate=17.5k fragments per second         ||
+||   40% completed,  12 mins elapsed, rate=17.1k fragments per second         ||
+||   40% completed,  12 mins elapsed, rate=17.0k fragments per second         ||
+||   41% completed,  12 mins elapsed, rate=17.0k fragments per second         ||
+||   41% completed,  13 mins elapsed, rate=17.0k fragments per second         ||
+||   41% completed,  13 mins elapsed, rate=16.9k fragments per second         ||
+||   42% completed,  13 mins elapsed, rate=16.9k fragments per second         ||
+||   42% completed,  13 mins elapsed, rate=16.8k fragments per second         ||
+||   42% completed,  13 mins elapsed, rate=16.8k fragments per second         ||
+||   43% completed,  13 mins elapsed, rate=16.8k fragments per second         ||
+|| Start read mapping in chunk.                                               ||
+||   43% completed,  13 mins elapsed, rate=16.9k fragments per second         ||
+||   50% completed,  15 mins elapsed, rate=17.1k fragments per second         ||
+||   51% completed,  16 mins elapsed, rate=16.7k fragments per second         ||
+||   51% completed,  16 mins elapsed, rate=16.7k fragments per second         ||
+||   52% completed,  16 mins elapsed, rate=16.6k fragments per second         ||
+||   52% completed,  16 mins elapsed, rate=16.6k fragments per second         ||
+||   52% completed,  17 mins elapsed, rate=16.6k fragments per second         ||
+||   53% completed,  17 mins elapsed, rate=16.5k fragments per second         ||
+||   53% completed,  17 mins elapsed, rate=16.5k fragments per second         ||
+||   54% completed,  17 mins elapsed, rate=16.4k fragments per second         ||
+|| Start read mapping in chunk.                                               ||
+||   54% completed,  17 mins elapsed, rate=16.6k fragments per second         ||
+||   61% completed,  19 mins elapsed, rate=16.8k fragments per second         ||
+||   62% completed,  20 mins elapsed, rate=16.6k fragments per second         ||
+||   62% completed,  20 mins elapsed, rate=16.5k fragments per second         ||
+||   63% completed,  20 mins elapsed, rate=16.5k fragments per second         ||
+||   63% completed,  20 mins elapsed, rate=16.4k fragments per second         ||
+||   63% completed,  20 mins elapsed, rate=16.4k fragments per second         ||
+||   64% completed,  21 mins elapsed, rate=16.4k fragments per second         ||
+||   64% completed,  21 mins elapsed, rate=16.3k fragments per second         ||
+||   64% completed,  21 mins elapsed, rate=16.3k fragments per second         ||
+||   65% completed,  21 mins elapsed, rate=16.3k fragments per second         ||
+|| Start read mapping in chunk.                                               ||
+||   65% completed,  21 mins elapsed, rate=16.4k fragments per second         ||
+||   71% completed,  23 mins elapsed, rate=16.7k fragments per second         ||
+||   72% completed,  23 mins elapsed, rate=16.7k fragments per second         ||
+||   73% completed,  23 mins elapsed, rate=16.7k fragments per second         ||
+||   73% completed,  24 mins elapsed, rate=16.7k fragments per second         ||
+||   73% completed,  24 mins elapsed, rate=16.7k fragments per second         ||
+||   74% completed,  24 mins elapsed, rate=16.6k fragments per second         ||
+||   74% completed,  24 mins elapsed, rate=16.6k fragments per second         ||
+||   74% completed,  24 mins elapsed, rate=16.6k fragments per second         ||
+||   74% completed,  24 mins elapsed, rate=16.6k fragments per second         ||
+||   75% completed,  24 mins elapsed, rate=16.5k fragments per second         ||
+||   75% completed,  24 mins elapsed, rate=16.5k fragments per second         ||
+|| Start read mapping in chunk.                                               ||
+||   74% completed,  25 mins elapsed, rate=16.4k fragments per second         ||
+||   78% completed,  26 mins elapsed, rate=16.9k fragments per second         ||
+||   81% completed,  27 mins elapsed, rate=17.2k fragments per second         ||
+||   81% completed,  27 mins elapsed, rate=17.2k fragments per second         ||
+||   81% completed,  27 mins elapsed, rate=17.1k fragments per second         ||
+||   82% completed,  27 mins elapsed, rate=17.1k fragments per second         ||
+||   82% completed,  27 mins elapsed, rate=17.1k fragments per second         ||
+||   82% completed,  27 mins elapsed, rate=17.0k fragments per second         ||
+||   82% completed,  27 mins elapsed, rate=17.0k fragments per second         ||
+||   82% completed,  27 mins elapsed, rate=17.0k fragments per second         ||
+||   83% completed,  28 mins elapsed, rate=17.0k fragments per second         ||
+|| Start read mapping in chunk.                                               ||
+||   81% completed,  28 mins elapsed, rate=16.6k fragments per second         ||
+||   87% completed,  30 mins elapsed, rate=16.8k fragments per second         ||
+||   88% completed,  30 mins elapsed, rate=16.6k fragments per second         ||
+||   88% completed,  30 mins elapsed, rate=16.6k fragments per second         ||
+||   88% completed,  30 mins elapsed, rate=16.5k fragments per second         ||
+||   89% completed,  31 mins elapsed, rate=16.5k fragments per second         ||
+||   89% completed,  31 mins elapsed, rate=16.5k fragments per second         ||
+||   90% completed,  31 mins elapsed, rate=16.4k fragments per second         ||
+||   90% completed,  31 mins elapsed, rate=16.4k fragments per second         ||
+||   90% completed,  31 mins elapsed, rate=16.4k fragments per second         ||
+||   91% completed,  32 mins elapsed, rate=16.3k fragments per second         ||
+|| Start read mapping in chunk.                                               ||
+||   91% completed,  32 mins elapsed, rate=16.4k fragments per second         ||
+||   97% completed,  34 mins elapsed, rate=16.4k fragments per second         ||
+||   97% completed,  34 mins elapsed, rate=16.4k fragments per second         ||
+||   98% completed,  34 mins elapsed, rate=16.4k fragments per second         ||
+||   98% completed,  34 mins elapsed, rate=16.3k fragments per second         ||
+||   98% completed,  34 mins elapsed, rate=16.3k fragments per second         ||
+||   99% completed,  34 mins elapsed, rate=16.3k fragments per second         ||
+||   99% completed,  34 mins elapsed, rate=16.3k fragments per second         ||
+||   99% completed,  35 mins elapsed, rate=16.3k fragments per second         ||
+||                                                                            ||
+||                           Completed successfully.                          ||
+||                                                                            ||
+\\====================================    ====================================//
+
+//================================   Summary =================================\\
+||                                                                            ||
+||             Total fragments : 34,148,484                                   ||
+||                      Mapped : 30,566,701 (89.5%)                           ||
+||             Uniquely mapped : 30,566,701                                   ||
+||               Multi-mapping : 0                                            ||
+||                                                                            ||
+||                    Unmapped : 3,581,783                                    ||
+||                                                                            ||
+||             Properly paired : 24,092,449                                   ||
+||         Not properly paired : 6,474,252                                    ||
+||                   Singleton : 1,314,630                                    ||
+||                    Chimeric : 312,223                                      ||
+||       Unexpected strandness : 18,983                                       ||
+||  Unexpected fragment length : 4,581,725                                    ||
+||       Unexpected read order : 246,691                                      ||
+||                                                                            ||
+||                      Indels : 136,696                                      ||
+||                                                                            ||
+||                Running time : 35.2 minutes                                 ||
+||                                                                            ||
+\\============================================================================//
+
+mkdir: cannot create directory ‘logs’: File exists
+mkdir: cannot create directory ‘trimmed_reads’: File exists
+# Downloading 
+2021-08-26 03:32:02,762 - SRR ids: ['SRR6078293']
+2021-08-26 03:32:02,762 - extra args: ['--split-files', '--gzip']
+2021-08-26 03:32:02,764 - tempdir: /tmp/pfd_cnrljc4m
+2021-08-26 03:32:02,764 - CMD: sra-stat --meta --quick SRR6078293
+2021-08-26 03:32:06,125 - SRR6078293 spots: 36662274
+2021-08-26 03:32:06,125 - blocks: [[1, 6110379], [6110380, 12220758], [12220759, 18331137], [18331138, 24441516], [24441517, 30551895], [30551896, 36662274]]
+2021-08-26 03:32:06,126 - CMD: fastq-dump -N 1 -X 6110379 -O /tmp/pfd_cnrljc4m/0 --split-files --gzip SRR6078293
+2021-08-26 03:32:06,128 - CMD: fastq-dump -N 6110380 -X 12220758 -O /tmp/pfd_cnrljc4m/1 --split-files --gzip SRR6078293
+2021-08-26 03:32:06,130 - CMD: fastq-dump -N 12220759 -X 18331137 -O /tmp/pfd_cnrljc4m/2 --split-files --gzip SRR6078293
+2021-08-26 03:32:06,132 - CMD: fastq-dump -N 18331138 -X 24441516 -O /tmp/pfd_cnrljc4m/3 --split-files --gzip SRR6078293
+2021-08-26 03:32:06,134 - CMD: fastq-dump -N 24441517 -X 30551895 -O /tmp/pfd_cnrljc4m/4 --split-files --gzip SRR6078293
+2021-08-26 03:32:06,136 - CMD: fastq-dump -N 30551896 -X 36662274 -O /tmp/pfd_cnrljc4m/5 --split-files --gzip SRR6078293
+Read 6110379 spots for SRR6078293
+Written 6110379 spots for SRR6078293
+Read 6110379 spots for SRR6078293
+Written 6110379 spots for SRR6078293
+Read 6110379 spots for SRR6078293
+Written 6110379 spots for SRR6078293
+Read 6110379 spots for SRR6078293
+Written 6110379 spots for SRR6078293
+Read 6110379 spots for SRR6078293
+Written 6110379 spots for SRR6078293
+Read 6110379 spots for SRR6078293
+Written 6110379 spots for SRR6078293
+Started analysis of SRR6078293_1.fastq.gz
+Started analysis of SRR6078293_2.fastq.gz
+Approx 5% complete for SRR6078293_2.fastq.gz
+Approx 5% complete for SRR6078293_1.fastq.gz
+Approx 10% complete for SRR6078293_2.fastq.gz
+Approx 10% complete for SRR6078293_1.fastq.gz
+Approx 15% complete for SRR6078293_1.fastq.gz
+Approx 15% complete for SRR6078293_2.fastq.gz
+Approx 20% complete for SRR6078293_1.fastq.gz
+Approx 25% complete for SRR6078293_1.fastq.gz
+Approx 20% complete for SRR6078293_2.fastq.gz
+Approx 25% complete for SRR6078293_2.fastq.gz
+Approx 30% complete for SRR6078293_1.fastq.gz
+Approx 35% complete for SRR6078293_1.fastq.gz
+Approx 30% complete for SRR6078293_2.fastq.gz
+Approx 40% complete for SRR6078293_1.fastq.gz
+Approx 35% complete for SRR6078293_2.fastq.gz
+Approx 45% complete for SRR6078293_1.fastq.gz
+Approx 40% complete for SRR6078293_2.fastq.gz
+Approx 50% complete for SRR6078293_1.fastq.gz
+Approx 55% complete for SRR6078293_1.fastq.gz
+Approx 45% complete for SRR6078293_2.fastq.gz
+Approx 60% complete for SRR6078293_1.fastq.gz
+Approx 50% complete for SRR6078293_2.fastq.gz
+Approx 65% complete for SRR6078293_1.fastq.gz
+Approx 70% complete for SRR6078293_1.fastq.gz
+Approx 55% complete for SRR6078293_2.fastq.gz
+Approx 60% complete for SRR6078293_2.fastq.gz
+Approx 75% complete for SRR6078293_1.fastq.gz
+Approx 65% complete for SRR6078293_2.fastq.gz
+Approx 80% complete for SRR6078293_1.fastq.gz
+Approx 70% complete for SRR6078293_2.fastq.gz
+Approx 85% complete for SRR6078293_1.fastq.gz
+Approx 75% complete for SRR6078293_2.fastq.gz
+Approx 80% complete for SRR6078293_2.fastq.gz
+Approx 90% complete for SRR6078293_1.fastq.gz
+Approx 85% complete for SRR6078293_2.fastq.gz
+Approx 95% complete for SRR6078293_1.fastq.gz
+Approx 90% complete for SRR6078293_2.fastq.gz
+Analysis complete for SRR6078293_1.fastq.gz
+Approx 95% complete for SRR6078293_2.fastq.gz
+Analysis complete for SRR6078293_2.fastq.gz
+TrimmomaticPE: Started with arguments:
+ -threads 6 -phred33 raw_reads/SRR6078293_1.fastq.gz raw_reads/SRR6078293_2.fastq.gz trimmed_reads/SRR6078293_1.tp.fastq.gz trimmed_reads/SRR6078293_1.tu.fastq.gz trimmed_reads/SRR6078293_2.tp.fastq.gz trimmed_reads/SRR6078293_2.tu.fastq.gz SLIDINGWINDOW:4:20 ILLUMINACLIP:trimmed_reads/adapters_NexteraPE-PE.fasta:2:30:10
+Using Long Clipping Sequence: 'AGATGTGTATAAGAGACAG>PrefixNX/2AGATGTGTATAAGAGACAG>Trans1TCGTCGGCAGCGTCAGATGTGTATAAGAGACAG>Trans1_rcCTGTCTCTTATACACATCTGACGCTGCCGACGA>Trans2GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAG>Trans2_rcCTGTCTCTTATACACATCTCCGAGCCCACGAGAC'
+ILLUMINACLIP: Using 0 prefix pairs, 0 forward/reverse sequences, 1 forward only sequences, 0 reverse only sequences
+Input Read Pairs: 36662274 Both Surviving: 36053490 (98.34%) Forward Only Surviving: 435645 (1.19%) Reverse Only Surviving: 161418 (0.44%) Dropped: 11721 (0.03%)
+TrimmomaticPE: Completed successfully
+Started analysis of SRR6078293_1.tp.fastq.gz
+Started analysis of SRR6078293_2.tp.fastq.gz
+Approx 5% complete for SRR6078293_1.tp.fastq.gz
+Approx 5% complete for SRR6078293_2.tp.fastq.gz
+Approx 10% complete for SRR6078293_1.tp.fastq.gz
+Approx 15% complete for SRR6078293_1.tp.fastq.gz
+Approx 10% complete for SRR6078293_2.tp.fastq.gz
+Approx 20% complete for SRR6078293_1.tp.fastq.gz
+Approx 15% complete for SRR6078293_2.tp.fastq.gz
+Approx 25% complete for SRR6078293_1.tp.fastq.gz
+Approx 30% complete for SRR6078293_1.tp.fastq.gz
+Approx 20% complete for SRR6078293_2.tp.fastq.gz
+Approx 25% complete for SRR6078293_2.tp.fastq.gz
+Approx 35% complete for SRR6078293_1.tp.fastq.gz
+Approx 30% complete for SRR6078293_2.tp.fastq.gz
+Approx 35% complete for SRR6078293_2.tp.fastq.gz
+Approx 40% complete for SRR6078293_1.tp.fastq.gz
+Approx 40% complete for SRR6078293_2.tp.fastq.gz
+Approx 45% complete for SRR6078293_1.tp.fastq.gz
+Approx 45% complete for SRR6078293_2.tp.fastq.gz
+Approx 50% complete for SRR6078293_1.tp.fastq.gz
+Approx 50% complete for SRR6078293_2.tp.fastq.gz
+Approx 55% complete for SRR6078293_2.tp.fastq.gz
+Approx 55% complete for SRR6078293_1.tp.fastq.gz
+Approx 60% complete for SRR6078293_1.tp.fastq.gz
+Approx 60% complete for SRR6078293_2.tp.fastq.gz
+Approx 65% complete for SRR6078293_1.tp.fastq.gz
+Approx 65% complete for SRR6078293_2.tp.fastq.gz
+Approx 70% complete for SRR6078293_1.tp.fastq.gz
+Approx 75% complete for SRR6078293_1.tp.fastq.gz
+Approx 70% complete for SRR6078293_2.tp.fastq.gz
+Approx 75% complete for SRR6078293_2.tp.fastq.gz
+Approx 80% complete for SRR6078293_1.tp.fastq.gz
+Approx 80% complete for SRR6078293_2.tp.fastq.gz
+Approx 85% complete for SRR6078293_1.tp.fastq.gz
+Approx 85% complete for SRR6078293_2.tp.fastq.gz
+Approx 90% complete for SRR6078293_2.tp.fastq.gz
+Approx 90% complete for SRR6078293_1.tp.fastq.gz
+Approx 95% complete for SRR6078293_2.tp.fastq.gz
+Approx 95% complete for SRR6078293_1.tp.fastq.gz
+Analysis complete for SRR6078293_2.tp.fastq.gz
+Analysis complete for SRR6078293_1.tp.fastq.gz
+
+        ==========     _____ _    _ ____  _____  ______          _____  
+        =====         / ____| |  | |  _ \|  __ \|  ____|   /\   |  __ \ 
+          =====      | (___ | |  | | |_) | |__) | |__     /  \  | |  | |
+            ====      \___ \| |  | |  _ <|  _  /|  __|   / /\ \ | |  | |
+              ====    ____) | |__| | |_) | | \ \| |____ / ____ \| |__| |
+        ==========   |_____/ \____/|____/|_|  \_\______/_/    \_\_____/
+	  v2.0.1
+
+//================================= setting ==================================\\
+||                                                                            ||
+|| Function      : Read alignment (RNA-Seq)                                   ||
+|| Input file 1  : SRR6078293_1.tp.fastq.gz                                   ||
+|| Input file 2  : SRR6078293_2.tp.fastq.gz                                   ||
+|| Output file   : SRR6078293.bam (BAM)                                       ||
+|| Index name    : GRCh38.fa.Subread_index                                    ||
+||                                                                            ||
+||                    ------------------------------------                    ||
+||                                                                            ||
+||                               Threads : 6                                  ||
+||                          Phred offset : 33                                 ||
+||               # of extracted subreads : 10                                 ||
+||                        Min read1 vote : 3                                  ||
+||                        Min read2 vote : 1                                  ||
+||                     Max fragment size : 600                                ||
+||                     Min fragment size : 50                                 ||
+||                        Max mismatches : 3                                  ||
+||                      Max indel length : 5                                  ||
+||            Report multi-mapping reads : no                                 ||
+|| Max alignments per multi-mapping read : 1                                  ||
+||                                                                            ||
+\\============================================================================//
+
+//================ Running (26-Aug-2021 04:24:23, pid=124368) ================\\
+||                                                                            ||
+|| Check the input reads.                                                     ||
+|| The input file contains base space reads.                                  ||
+|| Initialise the memory objects.                                             ||
+|| Estimate the mean read length.                                             ||
+|| The range of Phred scores observed in the data is [2,41]                   ||
+|| Create the output BAM file.                                                ||
+|| Check the index.                                                           ||
+|| Init the voting space.                                                     ||
+|| Global environment is initialised.                                         ||
+|| Load the 1-th index block...                                               ||
+|| The index block has been loaded.                                           ||
+|| Start read mapping in chunk.                                               ||
+||    0% completed, 0.2 mins elapsed, rate=22.8k fragments per second         ||
+||   Estimated fragment length : 178 bp                                       ||
+||    6% completed, 2.5 mins elapsed, rate=16.5k fragments per second         ||
+||    7% completed, 2.6 mins elapsed, rate=16.7k fragments per second         ||
+||    7% completed, 2.7 mins elapsed, rate=16.8k fragments per second         ||
+||    7% completed, 2.8 mins elapsed, rate=17.0k fragments per second         ||
+||    8% completed, 2.9 mins elapsed, rate=17.0k fragments per second         ||
+||    8% completed, 2.9 mins elapsed, rate=17.1k fragments per second         ||
+||    8% completed, 3.0 mins elapsed, rate=17.2k fragments per second         ||
+||    8% completed, 3.1 mins elapsed, rate=17.3k fragments per second         ||
+||    9% completed, 3.2 mins elapsed, rate=17.4k fragments per second         ||
+||    9% completed, 3.3 mins elapsed, rate=17.6k fragments per second         ||
+|| Start read mapping in chunk.                                               ||
+||    9% completed, 3.4 mins elapsed, rate=18.4k fragments per second         ||
+||   16% completed, 5.7 mins elapsed, rate=17.3k fragments per second         ||
+||   16% completed, 5.8 mins elapsed, rate=17.3k fragments per second         ||
+||   17% completed, 5.9 mins elapsed, rate=17.4k fragments per second         ||
+||   17% completed, 6.0 mins elapsed, rate=17.4k fragments per second         ||
+||   17% completed, 6.1 mins elapsed, rate=17.4k fragments per second         ||
+||   18% completed, 6.2 mins elapsed, rate=17.4k fragments per second         ||
+||   18% completed, 6.3 mins elapsed, rate=17.5k fragments per second         ||
+||   18% completed, 6.4 mins elapsed, rate=17.5k fragments per second         ||
+||   19% completed, 6.6 mins elapsed, rate=17.5k fragments per second         ||
+|| Start read mapping in chunk.                                               ||
+||   19% completed, 6.7 mins elapsed, rate=17.9k fragments per second         ||
+||   26% completed, 9.1 mins elapsed, rate=17.3k fragments per second         ||
+||   26% completed, 9.2 mins elapsed, rate=17.3k fragments per second         ||
+||   27% completed, 9.4 mins elapsed, rate=17.3k fragments per second         ||
+||   27% completed, 9.5 mins elapsed, rate=17.2k fragments per second         ||
+||   27% completed, 9.6 mins elapsed, rate=17.2k fragments per second         ||
+||   28% completed, 9.7 mins elapsed, rate=17.2k fragments per second         ||
+||   28% completed, 9.8 mins elapsed, rate=17.2k fragments per second         ||
+||   28% completed,   9 mins elapsed, rate=17.2k fragments per second         ||
+||   29% completed,  10 mins elapsed, rate=17.1k fragments per second         ||
+|| Start read mapping in chunk.                                               ||
+||   29% completed,  10 mins elapsed, rate=17.4k fragments per second         ||
+||   36% completed,  12 mins elapsed, rate=17.1k fragments per second         ||
+||   36% completed,  12 mins elapsed, rate=17.0k fragments per second         ||
+||   36% completed,  12 mins elapsed, rate=17.0k fragments per second         ||
+||   36% completed,  13 mins elapsed, rate=17.0k fragments per second         ||
+||   37% completed,  13 mins elapsed, rate=17.0k fragments per second         ||
+||   37% completed,  13 mins elapsed, rate=17.0k fragments per second         ||
+||   38% completed,  13 mins elapsed, rate=16.9k fragments per second         ||
+||   38% completed,  13 mins elapsed, rate=16.9k fragments per second         ||
+||   38% completed,  13 mins elapsed, rate=16.9k fragments per second         ||
+|| Start read mapping in chunk.                                               ||
+||   38% completed,  13 mins elapsed, rate=17.1k fragments per second         ||
+||   45% completed,  16 mins elapsed, rate=16.8k fragments per second         ||
+||   45% completed,  16 mins elapsed, rate=16.8k fragments per second         ||
+||   46% completed,  16 mins elapsed, rate=16.7k fragments per second         ||
+||   46% completed,  16 mins elapsed, rate=16.7k fragments per second         ||
+||   47% completed,  16 mins elapsed, rate=16.7k fragments per second         ||
+||   47% completed,  17 mins elapsed, rate=16.7k fragments per second         ||
+||   47% completed,  17 mins elapsed, rate=16.6k fragments per second         ||
+||   48% completed,  17 mins elapsed, rate=16.6k fragments per second         ||
+||   48% completed,  17 mins elapsed, rate=16.6k fragments per second         ||
+|| Start read mapping in chunk.                                               ||
+||   48% completed,  17 mins elapsed, rate=16.8k fragments per second         ||
+||   55% completed,  20 mins elapsed, rate=16.6k fragments per second         ||
+||   55% completed,  20 mins elapsed, rate=16.6k fragments per second         ||
+||   56% completed,  20 mins elapsed, rate=16.6k fragments per second         ||
+||   56% completed,  20 mins elapsed, rate=16.5k fragments per second         ||
+||   56% completed,  20 mins elapsed, rate=16.5k fragments per second         ||
+||   57% completed,  20 mins elapsed, rate=16.5k fragments per second         ||
+||   57% completed,  20 mins elapsed, rate=16.5k fragments per second         ||
+||   57% completed,  20 mins elapsed, rate=16.5k fragments per second         ||
+||   57% completed,  21 mins elapsed, rate=16.4k fragments per second         ||
+||   58% completed,  21 mins elapsed, rate=16.4k fragments per second         ||
+|| Start read mapping in chunk.                                               ||
+||   58% completed,  21 mins elapsed, rate=16.5k fragments per second         ||
+||   65% completed,  23 mins elapsed, rate=16.4k fragments per second         ||
+||   65% completed,  23 mins elapsed, rate=16.4k fragments per second         ||
+||   65% completed,  24 mins elapsed, rate=16.4k fragments per second         ||
+||   66% completed,  24 mins elapsed, rate=16.4k fragments per second         ||
+||   66% completed,  24 mins elapsed, rate=16.4k fragments per second         ||
+||   66% completed,  24 mins elapsed, rate=16.3k fragments per second         ||
+||   67% completed,  24 mins elapsed, rate=16.3k fragments per second         ||
+||   67% completed,  24 mins elapsed, rate=16.3k fragments per second         ||
+||   67% completed,  24 mins elapsed, rate=16.3k fragments per second         ||
+|| Start read mapping in chunk.                                               ||
+||   68% completed,  25 mins elapsed, rate=16.4k fragments per second         ||
+||   74% completed,  27 mins elapsed, rate=16.3k fragments per second         ||
+||   75% completed,  27 mins elapsed, rate=16.2k fragments per second         ||
+||   75% completed,  27 mins elapsed, rate=16.2k fragments per second         ||
+||   75% completed,  28 mins elapsed, rate=16.2k fragments per second         ||
+||   76% completed,  28 mins elapsed, rate=16.1k fragments per second         ||
+||   76% completed,  28 mins elapsed, rate=16.1k fragments per second         ||
+||   76% completed,  28 mins elapsed, rate=16.1k fragments per second         ||
+||   76% completed,  28 mins elapsed, rate=16.1k fragments per second         ||
+||   77% completed,  28 mins elapsed, rate=16.1k fragments per second         ||
+||   77% completed,  29 mins elapsed, rate=16.0k fragments per second         ||
+|| Start read mapping in chunk.                                               ||
+||   77% completed,  29 mins elapsed, rate=16.1k fragments per second         ||
+||   84% completed,  31 mins elapsed, rate=16.1k fragments per second         ||
+||   84% completed,  31 mins elapsed, rate=16.1k fragments per second         ||
+||   84% completed,  31 mins elapsed, rate=16.0k fragments per second         ||
+||   85% completed,  31 mins elapsed, rate=16.0k fragments per second         ||
+||   85% completed,  32 mins elapsed, rate=16.0k fragments per second         ||
+||   85% completed,  32 mins elapsed, rate=16.0k fragments per second         ||
+||   86% completed,  32 mins elapsed, rate=16.0k fragments per second         ||
+||   86% completed,  32 mins elapsed, rate=15.9k fragments per second         ||
+||   86% completed,  32 mins elapsed, rate=15.9k fragments per second         ||
+|| Start read mapping in chunk.                                               ||
+||   87% completed,  33 mins elapsed, rate=16.0k fragments per second         ||
+||   93% completed,  35 mins elapsed, rate=15.9k fragments per second         ||
+||   94% completed,  35 mins elapsed, rate=15.9k fragments per second         ||
+||   94% completed,  35 mins elapsed, rate=15.9k fragments per second         ||
+||   94% completed,  35 mins elapsed, rate=15.8k fragments per second         ||
+||   95% completed,  36 mins elapsed, rate=15.8k fragments per second         ||
+||   95% completed,  36 mins elapsed, rate=15.8k fragments per second         ||
+||   95% completed,  36 mins elapsed, rate=15.8k fragments per second         ||
+||   95% completed,  36 mins elapsed, rate=15.8k fragments per second         ||
+||   96% completed,  36 mins elapsed, rate=15.8k fragments per second         ||
+||   96% completed,  36 mins elapsed, rate=15.8k fragments per second         ||
+||   96% completed,  36 mins elapsed, rate=15.7k fragments per second         ||
+|| Start read mapping in chunk.                                               ||
+||   96% completed,  37 mins elapsed, rate=15.8k fragments per second         ||
+||   99% completed,  37 mins elapsed, rate=15.8k fragments per second         ||
+||   99% completed,  37 mins elapsed, rate=15.7k fragments per second         ||
+||   99% completed,  37 mins elapsed, rate=15.7k fragments per second         ||
+||   99% completed,  38 mins elapsed, rate=15.7k fragments per second         ||
+||   99% completed,  38 mins elapsed, rate=15.7k fragments per second         ||
+||   99% completed,  38 mins elapsed, rate=15.7k fragments per second         ||
+||   99% completed,  38 mins elapsed, rate=15.7k fragments per second         ||
+||   99% completed,  38 mins elapsed, rate=15.7k fragments per second         ||
+||   99% completed,  38 mins elapsed, rate=15.7k fragments per second         ||
+||                                                                            ||
+||                           Completed successfully.                          ||
+||                                                                            ||
+\\====================================    ====================================//
+
+//================================   Summary =================================\\
+||                                                                            ||
+||             Total fragments : 36,053,490                                   ||
+||                      Mapped : 32,697,975 (90.7%)                           ||
+||             Uniquely mapped : 32,697,975                                   ||
+||               Multi-mapping : 0                                            ||
+||                                                                            ||
+||                    Unmapped : 3,355,515                                    ||
+||                                                                            ||
+||             Properly paired : 25,918,045                                   ||
+||         Not properly paired : 6,779,930                                    ||
+||                   Singleton : 1,158,274                                    ||
+||                    Chimeric : 363,766                                      ||
+||       Unexpected strandness : 21,293                                       ||
+||  Unexpected fragment length : 5,158,690                                    ||
+||       Unexpected read order : 77,907                                       ||
+||                                                                            ||
+||                      Indels : 156,767                                      ||
+||                                                                            ||
+||                Running time : 38.3 minutes                                 ||
+||                                                                            ||
+\\============================================================================//
+

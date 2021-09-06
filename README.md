@@ -1,6 +1,7 @@
 # NGSprint2021 RNA-seq hackathon
 
 When: 8 - 15.09.2021
+
 Where: Online
 
 More info about the event can be found on the [website](https://ngschool.eu/ngsprint). 

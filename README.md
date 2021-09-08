@@ -18,7 +18,7 @@ You can create a conda enviroment with dependencies and potentially useful tools
 conda create -y -n rna python=3.6
 conda activate rna
 conda install -y -c conda-forge r=4.1.0
-conda install -y -c bioconda sra-tools parallel-fastq-dump fastqc multiqc trimmomatic trim-galore star hisat2 subread samtools bedtools
+conda install -y -c bioconda sra-tools parallel-fastq-dump fastqc multiqc trimmomatic trim-galore star hisat2 subread picard samtools bedtools igv
 conda env export --name rna > rna_env.yml
 ```
 
